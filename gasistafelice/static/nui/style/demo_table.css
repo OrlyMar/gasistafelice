@@ -535,4 +535,34 @@ div.box {
 	overflow: auto;
 	border: 1px solid #8080FF;
 	background-color: #E5E5FF;
+} 
+
+/*---------------------------------------------------------------------------------------------------------
+  Introdotta modifica alla visualizzazione delle liste anche su jquery.rees.js con nuova classe 
+  view_list al posto di "resource row" qui elaborata con il css e l' introduzione del div al posto di table
+  ul al posto di tr e li al posto di td
+--------------------------------------------------------------------------------------------------------- */
+
+div .view_list  { 
+  width:360px;
+  float:left;
+  margin:1px 1px 10px 10px;
+  background-color:#eef;
+  font-size:1.2em !important;
+  font-weight:bold !important; 
+  overflow:hidden;
 }
+.view_list { 
+ 
+padding: 0 0 0 1px !important; 
+line-height:1.5em !important; 
+}
+
+
+#section_blocks_order .view_list, 
+#section_blocks_orders .view_list,
+#section_blocks_accounting .view_list
+ { 
+float:none !important;
+}
+

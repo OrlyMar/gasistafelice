@@ -494,6 +494,8 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
 
         /* This method is inspired by blocks specific code of SANET by Laboratori Guglielmo Marconi */
 
+
+/*WAS:
         var res = "		\
         <table> 		\
             @@inforow@@	\
@@ -511,7 +513,25 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
             </tr>	 			\
             @@inforow@@ \
         ";
+*/
 
+        var res = "		\
+        <div> 		\
+            @@inforow@@	\
+        </div> 		\
+        ";
+        
+        var inforow = " \
+            <ul id='@@row_id@@' > 			\
+                <li width='100%'>   			\
+                    <span class='view_list' >@@resource@@</span> \
+                </li>		     			\
+                <li>		     			\
+                @@actions@@ \
+                </li>		     			\
+            </ul>	 			\
+            @@inforow@@ \
+        ";
         var jQel = this.parsed_data;
         
         if (jQel.children('error').length > 0)

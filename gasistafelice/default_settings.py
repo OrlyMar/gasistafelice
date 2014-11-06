@@ -262,7 +262,7 @@ RESOURCE_PAGE_BLOCKS = {
     'site' : [{
         'name' : 'people',
         'descr' : 'Partecipanti',
-        'blocks' : ['gas_list', 'suppliers', 'persons' ]  #, sostituito suppliers_report con 'suppliers'
+        'blocks' : ['gas_list', 'suppliers', 'gasmembers' ]  #, sostituito suppliers_report con 'suppliers'e persons con gasmembers
     },{
         'name' : 'order',
         'descr' : 'Ordini',
@@ -270,7 +270,7 @@ RESOURCE_PAGE_BLOCKS = {
     },{
         'name' : 'info',
         'descr' : 'Info DES',
-        'blocks' : ['details']
+        'blocks' : ['details', 'suppliers_report']  # aggiunto supplier_report
     },{
         'name' : 'accounting',
         'descr' : 'Saldo',
