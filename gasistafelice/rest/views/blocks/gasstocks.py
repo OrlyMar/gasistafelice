@@ -63,7 +63,8 @@ class Block(BlockSSDataTables):
 
     def _get_resource_list(self, request):
         #GASSupplierStock
-        return request.resource.gasstocks.order_by('stock__product__category__name', 'stock__product__name')
+        #WAS: return request.resource.gasstocks.order_by('stock__product__category__name', 'stock__product__name')
+        return request.resource.gasstocks.order_by('stock__supplier_category__name', 'stock__product__name')
 
     def _get_edit_multiple_form_class(self):
         return GASSupplierStockFormSet
