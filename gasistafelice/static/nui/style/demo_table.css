@@ -34,8 +34,8 @@
 	position: relative;
 	min-height: 302px;
 	clear: both;
-	_height: 302px;
-	zoom: 1; /* Feeling sorry for IE */
+	height: 302px;
+	/* WAS zoom: 1; errore validatore*/ /* Feeling sorry for IE */
 }
 
 .dataTables_processing {
@@ -72,7 +72,6 @@
 
 .dataTables_paginate {
 	width: 44px;
-	* width: 50px;
 	float: right;
 	text-align: right;
 }
@@ -130,7 +129,7 @@ table.display thead th {
 	border-bottom: 1px solid black;
 	font-weight: bold;
 	cursor: pointer;
-	* cursor: hand;
+	
 }
 
 table.display tfoot th {
@@ -237,7 +236,7 @@ tr.even {
 }
 
 .dataTables_scrollBody {
-	*margin-top: -1px;
+	margin-top: -1px;
 }
 
 .top, .bottom {
@@ -298,7 +297,7 @@ td.details {
 	padding: 2px 5px;
 	margin: 0 3px;
 	cursor: pointer;
-	*cursor: hand;
+	
 }
 
 .paging_full_numbers span.paginate_button {

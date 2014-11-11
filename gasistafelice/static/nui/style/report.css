@@ -9,8 +9,8 @@
 		.report_list_table {
 			width: 100%;
 			border: 0px solid black;
-			border-spacing: 2;
-			border-collapsing: collapse;
+			border-spacing: 2px;
+			border-collapse: collapse;
 			table-layout:fixed;
 		}
 
@@ -20,7 +20,7 @@
 		}
 
 		.report_list_table th {
-			border-bottom : 1px solid lightgrey;
+			border-bottom : 1px solid gray;
 			background-color : #d7ecc7;
 			margin: 10px;
 			text-align : center;
@@ -41,12 +41,12 @@
 	
 		.report_params_table {
 			border: 0px solid black;
-			border-spacing: 2;
-			border-collapsing: collapse;
+			border-spacing: 2px;
+			border-collapse: collapse;
 		}
 	
 		.report_params_table th {
-			border-bottom : 1px solid lightgrey;
+			border-bottom : 1px solid gray;
 			background-color : #d7ecc7;
 			margin: 10px;
 			text-align : center;
@@ -89,7 +89,7 @@
 		}
 
 		.report_table_row_val {
-			align: right;
+			text-align: right;
 		}
 
 		/*
@@ -98,7 +98,7 @@
 		.pie_chart {
 			vertical-align:top; 
 			display:inline-block; 
-			align:center;
+			text-align:center;
 		}
 
 		.pie_chart_graph {
@@ -110,7 +110,7 @@
 		.pie_chart_legend {
 			font-size: 10px;
 			width: 50%;
-			valign: center;
+			text-align: center;
 			padding: 2px;
 		}
 
@@ -131,9 +131,9 @@
 		* Grafici a barre
 		*/
 		.bar_chart {
-			vertical-align:top; 
+			vertical-align:middle; 
 			display:inline-block; 
-			align:center;
+			text-align:center;
 		}
 
 		.bar_chart_graph {
@@ -145,9 +145,9 @@
 		.bar_chart_legend {
 
 			width: 50%;
-			valign: center;
+			text-align: center;
 			padding: 2px;
-			spacing	: 1px;
+			letter-spacing	: 1px;
 		}
 
 		.bar_chart_legend_header {
@@ -166,22 +166,21 @@
 		* Grafici a barre
 		*/
 		.line_chart {
-			//border: 1px solid #ff0000; 
-			vertical-align:top; 
-			display:inline-block; 
-			align:center;
+			border: 1px solid #ff0000; 
+			display:inline;
+                        text-align:center;
 		}
 
 		.line_chart_graph {
-			//border: 1px solid #0000ff;
+			border: 1px solid #0000ff;
 		}
 
 		.line_chart_info {
-			//border: 1px solid #ff00ff;
+			border: 1px solid #ff00ff;
 		}
 
 		.line_chart_title {
-			//border: 1px solid #00ffff;
+			border: 1px solid #00ffff;
 		}
 
 .report { list-style-image : url('/static/theme/img/resources/report16x16.png'); white-space: normal; }

@@ -80,17 +80,16 @@ li:tree_element div.content {
 /* ================================================================= */
 
 .log-UP{
-	background-color:lightgreen;
-	//color:white;
+	background-color:green;
 	color:black;
 }
 .log-UU{
-	background-color:lightgray;
-	//color:white;
+	background-color:gray;
+	color:white;
 }
 .log-DN{
 	background-color:red;
-	//color:white;
+	color:white;
 }
 .log-FA{
 	background-color:#FFFF90;
@@ -122,7 +121,7 @@ li:tree_element div.content {
 	padding:2px 2px;
 }
 
-//.user{ background-color:#D7ECC7; }
+.user{ background-color:#D7ECC7; }
 
 #user_data{
 	display: inline;
@@ -175,18 +174,18 @@ li:tree_element div.content {
 .fc-event.normal a {
 	border-style: hidden;
 	background-color: white;
-	//border-width: 0px;
+	border-width: 0px;
 	color:black;
 }
 .fc-event.normal {
 	border-style: hidden;
 	background-color: white;
-	//border-color: white;
-	//border-width: 0px;
+	border-color: white;
+	border-width: 0px;
 	
 }
 .fc-event.UP a, .tape-100, .small-100 {
-	background-color: lightgreen;
+	background-color: green;
 }
 .fc-event.DN a, .tape-10, .small-10{
 	background-color: red;
@@ -394,11 +393,11 @@ TSTATE_UU=40
 	background-color: white;
 	border: 1px #505050 solid;
 	padding: 0px;
-	//width: 150px;
+	width: 150px;
 }
 
 #ctx_menu_placeholder li:hover {
-	background-color: darkblue;
+	background-color: blue;
 }
 #ctx_menu_placeholder li:hover a {
 	color: white;
@@ -436,7 +435,7 @@ TSTATE_UU=40
 #user_notifications {
     float : right;
     padding-right: 1em;
-    background: lightyellow;
+    background: yellow;
     border: 1px solid orange;
 }
 

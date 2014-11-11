@@ -1,4 +1,8 @@
-@import url('widgets.css');
+/* WAS
+@import url('widgets.css'); e dava il seguente errore dal validatore: 
+@import non è permesso dopo nessun altra dichiarazione valida che non sia @charset e @import. @import url('widgets.css');
+riga soppressa
+------------------------------------------------------------------------------------------------------------------------- */
 
 /* FORM ROWS */
 

@@ -266,11 +266,11 @@ RESOURCE_PAGE_BLOCKS = {
     },{
         'name' : 'order',
         'descr' : 'Ordini',
-        'blocks' : ['open_orders', 'des_pacts']
+        'blocks' : ['open_orders']
     },{
         'name' : 'info',
         'descr' : 'Info DES',
-        'blocks' : ['details', 'suppliers_report']  # aggiunto supplier_report
+        'blocks' : ['details', 'suppliers_report', 'des_pacts']  # aggiunto supplier_report e patti
     },{
         'name' : 'accounting',
         'descr' : 'Saldo',
@@ -288,7 +288,7 @@ RESOURCE_PAGE_BLOCKS = {
     },{
         'name' : 'prodotti',
         'descr' : 'Prodotti',
-        'blocks' : ['categories']        # Introdotta nuova scheda "Prodotti" per le categorie prodotto
+        'blocks' : ['categories']        # Introdotta nuova scheda "Prodotti" per le categorie prodotto 
     }],
     'gas' : [{
         'name' : 'orders',
