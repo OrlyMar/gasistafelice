@@ -44,8 +44,8 @@
 </ul>
 {% endif %}
 
-<div id="login_page">
-<div id="logo">
+<div class="login_page_content">
+<div id="login_logo">
         <img src="/static/img/logo_cliente.png" alt= "logo" />
 </div>
 <!--was <h1> Gasista Felice - HappyGAS :)</h1> -->
@@ -97,18 +97,23 @@
     Installazione a disposizione di:
 </h1>
 
-<div style="clear:both;">
+<div style="clear:both;"> </div>
 
-<table style="border:2px solid lightgrey">
+
+<table class ="login_table">
     <thead>
-        <th style="text-align:center;font-size: 18px; ">GAS</th>
-        <th style="text-align:center;font-size: 18px;" >Città</th>
-        <th style="text-align:center;font-size: 18px;">Ordini</th>
-        <th style="text-align:center;font-size: 18px;">Flusso economico solidale</th>
+     <tr>
+        <th>GAS</th>
+        <th>Città</th>
+        <th>N° ordini</th>
+        <th>Flusso economico solidale</th>
+     </tr>
     </thead>
-{% for g in gas_list %}
-    {% render_gas_as_tr g %}
-{% endfor %}
+    <tbody>
+            {% for g in gas_list %}
+          {% render_gas_as_tr g %}
+        {% endfor %}
+    </tbody>
 </table>
 
 

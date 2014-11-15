@@ -13,12 +13,32 @@ body {
 
 
 /*
-    Login_Page
+   USER Login_Page
 */
 
-#login_page {
+.login_page_content {
     width:95%;
     margin-left: 1.5em ;
+
+}
+
+.login_table { 
+    border:2px solid #708090;
+    width:93%;
+}
+
+.login_table th { 
+    border:2px solid #FFF5EE;
+    text-align:center;
+    color:blue;
+    font-size: 18px; 
+
+}
+
+.login_table td { 
+    border:2px solid #FFF5EE;
+    color:black ;
+    font-size: 16px ; 
 
 }
 
