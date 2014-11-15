@@ -1,0 +1,78 @@
+/*
+   USER Login_Page CSS
+*/
+
+.user_login_page_content {
+    width:95%;
+    margin-left: 1.5em ;
+
+}
+
+#user_login_logo img {
+    display: inline;
+    margin-left: 1.5em ;
+
+}
+.user_login_form_table {
+        width:95%;
+        border:2px solid #FFF5EE;
+    }
+
+   
+    td {
+        color:blue; 
+        line-height: 2.0em; 
+        font-size: 18px;
+        border:1px solid #FFF5EE;
+    }
+    
+    h1 { color:gray; 
+        line-height: 2.5em; 
+        font-size: 20px; 
+        text-align:center;
+       }
+    
+    h2 { color:blue; 
+        line-height: 1.5em; 
+        font-size: 16px; 
+        text-align:left;
+       }
+
+.box { 
+        color:black; 
+        line-height: 1.5em; 
+        font-size: 16px; 
+        text-align:center;
+        border: 1px solid #B0C4DE; 
+        background-color: #D3D3D3; 
+        padding:2.5em 2em 2em 2em;
+        margin-top:1em;
+}
+
+
+
+.user_login_table { 
+    border:2px solid #708090;
+    width:93%;
+}
+
+.user_login_table th { 
+    border:2px solid #FFF5EE;
+    text-align:center;
+    color:blue;
+    font-size: 18px; 
+
+}
+
+.user_login_table td { 
+    border:4px solid #FFF5EE;
+    color:black ;
+    font-size: 16px ; 
+    text-align:center;
+    line-height: 1.5em;
+}
+
+
+
+
+
