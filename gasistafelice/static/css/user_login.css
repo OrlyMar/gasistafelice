@@ -2,10 +2,9 @@
    USER Login_Page CSS
 */
 
-.user_login_page_content {
+.user_login_content {
     width:95%;
     margin-left: 1.5em ;
-
 }
 
 #user_login_logo img {
@@ -13,10 +12,24 @@
     margin-left: 1.5em ;
 
 }
+
+.traditional-list { margin-left: 2em; padding:0.2em;}
+    ol.traditional-list { list-style-type:upper-roman; }
+    ul.traditional-list { list-style-type:circle; }
+    li.traditional-list.true { list-style-image : url("/media/img/admin/icon-yes.gif"); }
+    li.traditional-list.false { list-style-image : url("/media/img/admin/icon-no.gif"); }
+    .done { text-decoration : line-through; }
+
+
+
+
+
+
 .user_login_form_table {
         width:95%;
         border:2px solid #FFF5EE;
-    }
+      background: linear-gradient(to right, #FFFFF0 , #fff); /* Standard syntax */
+}
 
    
     td {
@@ -24,7 +37,8 @@
         line-height: 2.0em; 
         font-size: 18px;
         border:1px solid #FFF5EE;
-    }
+    background: linear-gradient(to right, #FFFFF0 , #fff); /* Standard syntax */
+}
     
     h1 { color:gray; 
         line-height: 2.5em; 
@@ -39,12 +53,12 @@
        }
 
 .box { 
-        color:black; 
+        color:gray; 
         line-height: 1.5em; 
-        font-size: 16px; 
+        font-size: 20px; 
         text-align:center;
         border: 1px solid #B0C4DE; 
-        background-color: #D3D3D3; 
+        background: linear-gradient(to left, #FFFFF0 , #FFF); /* Standard syntax */ 
         padding:2.5em 2em 2em 2em;
         margin-top:1em;
 }
@@ -71,8 +85,5 @@
     text-align:center;
     line-height: 1.5em;
 }
-
-
-
 
 

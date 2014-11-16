@@ -8,7 +8,7 @@
 
 {% endblock %}
 
-
+<div class="user_login_content">
 {% block content %}
 {% if messages %}
 <ul class="messagelist">
@@ -18,7 +18,7 @@
 </ul>
 {% endif %}
 
-<div class="user_login_page_content">
+
 <div id="user_login_logo">
         <img src="/static/img/logo_cliente.png" alt= "logo" />
 </div>
@@ -28,7 +28,7 @@
 <table id="user_login_form_table">
     <tr><td>
 
-        <div class="user_login_page_content">
+        <div class="user_login_content">
         {% if form.errors %}
         {{ form.non_field_errors }}
         <p>Tieni presente che potresti non accedere perché ancora non hai alcun ruolo nel DES.<br />
@@ -74,7 +74,7 @@
         <th>GAS</th>
         <th>Città</th>
         <th>Numero di ordini</th>
-        <th>Flusso economico s olidale</th>
+        <th>Flusso economico solidale</th>
      </tr>
     </thead>
     <tbody>
@@ -95,7 +95,7 @@
 <ul>
 <li>Ordini InterGAS 
 </li><li>Velocizzazione del calcolo dei saldi economici
-</li><li>Gestione appartenenza GAS &lt; - &amp; MultiGAS
+</li><li>Gestione appartenenza GAS &lt; - &gt; MultiGAS
 </li><li>Migliorate le notifiche mail ai gasisti e ai referenti fornitore
 </li><li>Chiusura ed invio automatico del report PDF al fornitore e referente
 fornitore (se configurato nel GAS e nel patto)
@@ -112,7 +112,7 @@ fornitore (se configurato nel GAS e nel patto)
         
         <p>Version <span id="app_version" >{{ VERSION }}</span></p>
         <p style="center">Gasista Felice è software libero ed ognuno è libero di ridistribuirlo, secondo le condizioni della &nbsp;<a href="http://http://www.gnu.org/licenses/agpl-3.0.html">Licenza GNU AGPL 3</a></p>
-<p>Sconsigliamo e non Supportiamo IE &lt; = 7; Visualizzabile da IE &amp; = 9; Incoraggiamo l'uso di Browser Open Source ;-) </p>
+<p>Sconsigliamo e non Supportiamo IE &lt; = 7; Visualizzabile da IE &gt; = 9; Incoraggiamo l'uso di Browser Open Source ;-) </p>
         <p>{#  - Copyright &copy; 2011 - <a href="http://www.reesmarche.org">REES Marche</a> #}</p>
         <p style="padding-top:15px">
 <a href="http://validator.w3.org/check?uri=referer" ><img src="/static/img/29.gif" alt="validateXHTML" /></a>

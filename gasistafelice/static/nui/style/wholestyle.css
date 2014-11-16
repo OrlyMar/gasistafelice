@@ -107,8 +107,8 @@ button[disabled] {
 }
 
 input[readonly], input[disabled], textarea[disabled], textarea[readonly] { 
-	background-color : lightgrey;
-	color : grey;
+	background-color : #D3D3D3;
+	color : gray;
 }
 
 select   { 
@@ -380,7 +380,7 @@ border:0px;
 }
 
 .deleted { 
-	background-color : lightgrey; 
+	background-color : #D3D3D3; 
 }
 
 .target_table .odd {
@@ -423,7 +423,7 @@ border:0px;
 
 .target.UU, .target.UD {
 	list-style-image : url('/static/theme/img/resources/target_UU.png');
-	/*color : grey;*/
+	/*color : gray;*/
 }
 
 
@@ -459,7 +459,7 @@ border:0px;
   
    
   background-color: #FFF;
-  border: 1px  lightgray;
+  border: 1px  #D3D3D3;
   margin-top: 0.2em;
   padding: 5px;
   border-radius: 14px 14px 4px 4px;
@@ -510,12 +510,12 @@ ul.errorlist { max-width : 400px; }
     background-color: white;
     position:absolute;
     z-index : 10000;
-    border : 2px solid grey;
+    border : 2px solid gray;
 }
 
 #loading-container {
     z-index : 100000;
-    background-color: grey;
+    background-color: gray;
     opacity: 0.8;
     position:absolute;
     width:200%;
