@@ -23,10 +23,27 @@
 
 </head>
 <body>
-<div style="padding:1em; width:97%; line-height:1.5em;">
-{% block content %} {% endblock %}
-</div>
-{% block footer %}<div style="text-align: center; font-style: italic; font-size: 10px; margin-bottom: 20px;">Gasista Felice - v{% des_version %}</div>{% endblock %}
+<div class= "user_login_content">
+{% block content %} {% endblock %}</div>
+
+{% block footer %}
+<div id="footer">
+       <img src="/static/img/GNU.png"  alt="GNU" />
+       <img src="/static/img/logo_cliente_small.png"  alt="Logo" />
+       <img src="/static/img/GNU01.png"  alt="GNU" /> 
+
+        
+        <p>Version <span id="app_version" >{{ VERSION }}</span></p>
+        <p style="center">Gasista Felice è software libero ed ognuno è libero di ridistribuirlo, secondo le condizioni della &nbsp;<a href="http://http://www.gnu.org/licenses/agpl-3.0.html">Licenza GNU AGPL 3</a></p>
+<p>Sconsigliamo e non Supportiamo IE &lt; = 7; Visualizzabile da IE &gt; = 9; Incoraggiamo l'uso di Browser Open Source ;-) </p>
+        <p>{#  - Copyright &copy; 2011 - <a href="http://www.reesmarche.org">REES Marche</a> #}</p>
+        <p style="padding-top:15px">
+<a href="http://validator.w3.org/check?uri=referer" ><img src="/static/img/29.gif" alt="validateXHTML" /></a>
+<a href="http://www.gnu.org/licenses/agpl-3.0.html" ><img src="/static/img/licenze_logo.png" alt="GNU Affero General Public License 3.0" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check?uri=referer" ><img src="/static/img/28.gif" alt="validateCSS" /></a>
+</p>
+{% endblock %}    </div>
+<!--was <div style="text-align: center; font-style: italic; font-size: 10px; margin-bottom: 20px;">Gasista Felice - v{% des_version %} </div> -->
 </body>
 </html>
 

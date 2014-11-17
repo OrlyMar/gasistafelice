@@ -3,8 +3,10 @@
 */
 
 .user_login_content {
-    width:95%;
+    width:97%;
     margin-left: 1.5em ;
+    padding:1em;  
+    line-height:1.5em;
 }
 
 #user_login_logo img {
@@ -28,7 +30,7 @@
 .user_login_form_table {
         width:95%;
         border:2px solid #FFF5EE;
-      background: linear-gradient(to right, #FFFFF0 , #fff); /* Standard syntax */
+      background: linear-gradient(to right, #FFFFF9 , #fff); /* Standard syntax */
 }
 
    
@@ -37,7 +39,7 @@
         line-height: 2.0em; 
         font-size: 18px;
         border:1px solid #FFF5EE;
-    background: linear-gradient(to right, #FFFFF0 , #fff); /* Standard syntax */
+    background: linear-gradient(to right, #FFFFF9 , #fff); /* Standard syntax */
 }
     
     h1 { color:gray; 
@@ -58,7 +60,7 @@
         font-size: 20px; 
         text-align:center;
         border: 1px solid #B0C4DE; 
-        background: linear-gradient(to left, #FFFFF0 , #FFF); /* Standard syntax */ 
+        background: linear-gradient(to left, #FFFFF9 , #FFF); /* Standard syntax */ 
         padding:2.5em 2em 2em 2em;
         margin-top:1em;
 }
