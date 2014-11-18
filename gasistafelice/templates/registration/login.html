@@ -3,7 +3,7 @@
 {% load gas_base %}
 
 {% block extraheads %}
-<link href="/static/css/user_login.css" type="text/css" rel="stylesheet" />
+<link href="/static/css/user_base.css" type="text/css" rel="stylesheet" />
 
 
 {% endblock %}
@@ -17,16 +17,13 @@
 {% endif %}
 
 
-<div id="user_login_logo">
-        <img src="/static/img/logo_cliente.png" alt= "logo" />
-</div>
 <!--was <h1> Gasista Felice - HappyGAS :)</h1> -->
 
 
-<table id="user_login_form_table">
+<table id="user_base_form_table">
     <tr><td>
 
-        <div class="user_login_content">
+        <div class="user_base_content">
         {% if form.errors %}
         {{ form.non_field_errors }}
         <p>Tieni presente che potresti non accedere perché ancora non hai alcun ruolo nel DES.<br />
@@ -36,7 +33,7 @@
         
         <form method="post" action="{% url 'des.views.login' %}">
         {% csrf_token %}
-        <table class="user_login_form_table">
+        <table class="user_base_form_table">
         <tr>
             <td>{{ form.username.label_tag }}</td>
             <td>{{ form.username }}</td>
@@ -66,7 +63,7 @@
 <div>
 <h1>Installazione a disposizione di:</h1>
 
-<table class ="user_login_table">
+<table class ="user_base_table">
     <thead>
      <tr>
         <th>GAS</th>
@@ -76,9 +73,8 @@
      </tr>
     </thead>
     <tbody>
-            {% for g in gas_list %}
-          
-           {% render_gas_as_tr g %}
+{% for g in gas_list %}
+    {% render_gas_as_tr g %}
           </tr> 
         {% endfor %}
     </tbody>
@@ -89,7 +85,7 @@
 
 <h2>Le novità principali della 0.10</h2>
 </div>
-<div class="user_login_content">
+<div class="user_base_content">
 <ul>
 <li>Ordini InterGAS 
 </li><li>Velocizzazione del calcolo dei saldi economici

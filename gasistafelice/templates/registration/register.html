@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 {% load url from future %}
 
+{% block extraheads %}
+<link href="/static/css/user_base.css" type="text/css" rel="stylesheet" />
+
+
+{% endblock %}
 {% block content %}
 
 <h1>Benvenuto, ora puoi registrarti per gli ordini nel DES!</h1>
 
 
-<div style="margin:1em;">
+
 
     <p>Puoi associare il tuo utente ad un GAS o ad un fornitore esistente.
     Se sei un fornitore, e non sei ancora stato inserito 
@@ -14,21 +19,21 @@
     Il GAS può inserirti come fornitore del DES.</p> 
 
     <p>I campi contrassegnati dal simbolo * (asterisco) sono obbligatori.</p>
-</div>
 
-<div style="margin: 2em 0.5em;" class="registration">
+
+<div class="registration">
 {# Registration form #}
 <form method="post" action="{% url 'des.views.registration' %}">
 {% csrf_token %}
-
+</div>
 <table>
  {{ registration_form.as_table }}   
 </table>
 
-<input type="submit" value="Invia la richiesta di registrazione" />
+<p><input type="submit" value="Invia la richiesta di registrazione" /> </p>
 </form>
 
-</div>
+
 
 {% endblock %}
 

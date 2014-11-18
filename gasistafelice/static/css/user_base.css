@@ -1,15 +1,15 @@
 /*
-   USER Login_Page CSS
+   USER Login_Base CSS
 */
 
-.user_login_content {
+.user_base_content {
     width:97%;
     margin-left: 1.5em ;
     padding:1em;  
     line-height:1.5em;
 }
 
-#user_login_logo img {
+#user_base_logo img {
     display: inline;
     margin-left: 1.5em ;
 
@@ -27,7 +27,7 @@
 
 
 
-.user_login_form_table {
+.user_base_form_table {
         width:95%;
         border:2px solid #FFF5EE;
       background: linear-gradient(to right, #FFFFF9 , #fff); /* Standard syntax */
@@ -67,12 +67,12 @@
 
 
 
-.user_login_table { 
+.user_base_table { 
     border:2px solid #708090;
     width:93%;
 }
 
-.user_login_table th { 
+.user_base_table th { 
     border:2px solid #FFF5EE;
     text-align:center;
     color:blue;
@@ -80,7 +80,7 @@
 
 }
 
-.user_login_table td { 
+.user_base_table td { 
     border:4px solid #FFF5EE;
     color:black ;
     font-size: 16px ; 
