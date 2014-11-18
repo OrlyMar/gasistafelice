@@ -27,7 +27,7 @@
 <form method="post" action="{% url 'des.views.registration' %}">
 {% csrf_token %}
 
-<table>
+<table class="user_base_form_table">
  {{ registration_form.as_table }}   
 </table>
 
