@@ -21,18 +21,19 @@
     <p>I campi contrassegnati dal simbolo * (asterisco) sono obbligatori.</p>
 
 
-<div class="registration">
+
 {# Registration form #}
+<div class="registration">
 <form method="post" action="{% url 'des.views.registration' %}">
 {% csrf_token %}
-</div>
+
 <table>
  {{ registration_form.as_table }}   
 </table>
 
 <p><input type="submit" value="Invia la richiesta di registrazione" /> </p>
 </form>
-
+</div>
 
 
 {% endblock %}

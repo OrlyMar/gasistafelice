@@ -14,8 +14,9 @@
     L'utente sarà direttamente abilitato.
 </div>
 
-<div style="margin: 2em 0.5em;" class="registration">
+
 {# Registration form #}
+<div class="registration">
 <form method="post" action="{% url 'des.views.staff_registration' %}">
 {% csrf_token %}
 
@@ -23,7 +24,7 @@
  {{ registration_form.as_table }}   
 </table>
 
-<input type="submit" value="Registra il nuovo utente" />
+<p><input type="submit" value="Registra il nuovo utente" /></p>
 </form>
 
 </div>
