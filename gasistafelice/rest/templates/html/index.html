@@ -2179,7 +2179,8 @@
                         </ul>
                     </span>
                     {% endcomment %}
-                    <a id="home_page" href="{{ user.person.get_absolute_url_page }}">{% trans "Home page" %}</a>  
+                    
+    <span id="home_page" class="menu_section"><a href="{{ user.person.get_absolute_url_page }}">{% trans "Home page" %}</a></span>
                     <span id="help_menu" class="menu_section">
                         <h3>Aiuto!</h3>
                         <ul id="help_elements" class="submenu">
@@ -2188,7 +2189,7 @@
                             <li><a href="http://www.youtube.com/channel/UC8tP2Zl7Zjwx4G3fZGtzByw" target="_blank">Guarda i VIDEO!</a></li>
                         </ul>
                     </span>
-                    <a id="user_logout" href="{{ LOGOUT_URL }}">{% trans "Logout" %} </a>
+                    <span id="user_logout" class="menu_section"><a  href="{{ LOGOUT_URL }}">{% trans "Logout" %} </a></span>
                 </span>
                 
                 </div>
