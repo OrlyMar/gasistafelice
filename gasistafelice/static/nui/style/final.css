@@ -86,22 +86,26 @@ ul li {list-style-type: none;}
 /******* Menu_section in header content configurazione generale
 ............................................................... *******/
 
-.menu_section {display : inline-block;} 
+.right {
+float:right;
+}
+
+.menu_section {
+ display : inline-block; 
 /*Was table-cell sostituito con inline-block più supportato  */
 
-.menu_section h3 {
-    padding : 15px 0.5em;
-    /*color : white;*/
+    font-size:11pt;
+    padding : 15px 0.5em 18px 5px;
     text-align:center;
-    background-color: #AFD909; 
     border : 1px solid #fff; 
     border-radius: 15px 15px 2px 2px;
-    width:100px;
     box-shadow: 0px -1px 0px 2px rgba(0,0,0,0.5),
     inset -15px -5px 10px -2px rgba(0,0,0,0.2);
-
-
+    margin-top:2px;
+    width: 80px;
+  
 }
+
 
 .menu_section ul {
 background-color: transparent;
@@ -135,20 +139,48 @@ display : none;
 .submenu {max-height : 300px; overflow-y : auto;}
 
 
-/* Bottoni del menu section (Ordinare,Gas, Cronologia, Aiuto, Pagina Utente ed Esci) 
-[quelli non specificati (Gas,Patti,Fornitori) ereditano i valori generali del menu_section]...*/
+/* Bottoni del menu section ..*/
 
 /* bottone "Aiuto" (video e forum) 
 ...................................*/
-#help_menu h3, #help_menu li {
+#help_menu , #help_menu li {
 background-color: orange;
 }
 
 #help_menu li:hover {background-color: #FFF;}
 
+
+/* bottone "Ordinare" 
+.......................*/
+#user_urn_gasmember , #user_urn_gasmember li {
+background-color: #9999FF;
+}
+#user_urn_gasmember li:hover {background-color: #00FFFF ;}
+
+/* bottone "Gas" 
+.......................*/
+#user_urn_gas , #user_urn_gas li {
+background-color: #87CEFA;
+}
+#user_urn_gas li:hover {background-color: #B0C4DE;}
+
+/* bottone "Patti" 
+.......................*/
+#user_urn_pact , #user_urn_pact li {
+background-color: #99ffff;
+}
+#user_urn_pact li:hover {background-color: #48D1CC;}
+
+/* bottone "Fornitori" 
+.......................*/
+#user_urn_supplier , #user_urn_supplier li {
+background-color: #7FFF00;
+}
+#user_urn_supplier li:hover {background-color: #9ACD32;}
+
 /* bottone "Cronologia" 
 ...........................*/
-#history_menu h3, #history_menu li,#settings_menu h3, #settings_menu li {
+#history_menu , #history_menu li,#settings_menu p, #settings_menu li {
 background-color: yellow;
 }
 
@@ -156,42 +188,22 @@ background-color: yellow;
 background-color: #FFFFE0;
 }
 
-/* bottone "Ordinare" 
-.......................*/
-#user_urn_gasmember h3, #user_urn_gasmember li {
-background-color: #99ccff;
-}
-#user_urn_gasmember li:hover {background-color: #99ffff;}
 
 /* bottone "Pagina utente" ed "Esci" */
 
 #home_page  {
-    
-    padding : 15px 0.5em;
-    /*color : white;*/
-    text-align:center;
-    background-color: #FFC0CB; 
-    border : 1px solid #fff; 
-    border-radius: 15px 15px 2px 2px;
-    width:100px;
-    box-shadow: 0px -1px 0px 2px rgba(0,0,0,0.5),
-    inset -15px -5px 10px -2px rgba(0,0,0,0.2);
-    
+ background-color: #FE9;
+}
 
+#home_page a {
+   color:black;
 }
 
 #user_logout  {
-    
-    padding : 15px 0.5em;
-    /*color : white;*/
-    text-align:center;
-    border : 1px solid #fff; 
-    border-radius: 15px 15px 2px 2px;
-    width:120px;
-    box-shadow: 0px -1px 0px 2px rgba(0,0,0,0.5),
-    inset -15px -5px 10px -2px rgba(0,0,0,0.2);
-    margin-right:30px;
-    background: url("/static/img/esci00.png") no-repeat 9px 9px transparent;
+    vertical-align: top;
+    margin-right:10px;
+    width:60px;
+    background: transparent;
 
 }
 
