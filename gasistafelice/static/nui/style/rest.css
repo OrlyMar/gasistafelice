@@ -121,32 +121,6 @@ li:tree_element div.content {
 	padding:2px 2px;
 }
 
-.user{ background-color:#D7ECC7; }
-
-#user_data{
-	display: inline;
-}
-#user_data a.top{
-	padding:3px 3px ;
-
-}
-
-#user_data_content{
-	padding: 3px;
-	text-align: right;
-	display:list-item;
-	list-style:none;
-	list-style-position:inside;
-
-}
-
-.blockwizardpage{
-	width:400px;
-	height:250px;
-}
-
-.ctx_enabled {
-}
 
 
 /* ================================================== */
@@ -358,60 +332,6 @@ TSTATE_UU=40
 
 
 
-#search_input {
-
-	width: 90%;
-	margin: 5px;
-	border-collapse: separate;
-	border: 2px solid black;
-        border-radius: 7px 7px 4px 4px;
-}
-
-#moroptpanel {
-	border-collapse: separate;
-	border: 0px;
-	margin: 5px;
-}
-
-
-#search_results {
-
-	overflow:auto;
-	/*white-space :nowrap;*/
-
-}
-
-
-
-#all_history {
-	overflow   : auto;
-	white-space: nowrap;
-}
-
-
-#ctx_menu_placeholder {
-	background-color: white;
-	border: 1px #505050 solid;
-	padding: 0px;
-	width: 150px;
-}
-
-#ctx_menu_placeholder li:hover {
-	background-color: blue;
-}
-#ctx_menu_placeholder li:hover a {
-	color: white;
-}
-
-/* ADDED by fero */
-
-#body {
-	min-height:800px;
-}
-
-#resource_panel{
-	min-width: 240px;
-}
 
 .dataTables_wrapper {
     width : 70%;
@@ -432,12 +352,4 @@ TSTATE_UU=40
     clear: both;
 }
 
-#user_notifications {
-    float : right;
-    padding-right: 1em;
-    background: yellow;
-    border: 1px solid orange;
-}
-
-.dbg{background-color: #FFF /* #D3D3D3 orange*/;}
 

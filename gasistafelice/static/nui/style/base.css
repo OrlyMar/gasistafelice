@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 /*
     DJANGO Admin styles
 */
@@ -54,11 +61,16 @@ h1 {
     color: #666;
     padding: 0 6px 0 0;
     margin: 0 0 .2em 0;
+    line-height: 1.5em;
+    text-align:center;
 }
 
 h2 {
     font-size: 16px;
     margin: 1em 0 .5em 0;
+    line-height: 1.2em;
+    color:blue;
+    text-align:left;
 }
 
 h2.subhead {
@@ -240,6 +252,14 @@ p img, h1 img, h2 img, h3 img, h4 img, td img {
 table {
     border-collapse: collapse;
     border-color: #ccc;
+}
+
+td {
+        color:blue; 
+        line-height: 2.0em; 
+        font-size: 18px;
+        border:1px solid #FFF5EE;
+    background: linear-gradient(to right, #FFFFF9 , #fff); /* Standard syntax */
 }
 
 td, th {
@@ -779,4 +799,22 @@ table#change-history tbody th {
     background: #eee url(../img/admin/nav-bg.gif) bottom left repeat-x;
     color: #666;
 }
+
+.box { 
+        color:gray; 
+        line-height: 1.5em; 
+        font-size: 20px; 
+        text-align:center;
+        border: 1px solid #B0C4DE; 
+        background: linear-gradient(to left, #FFFFF9 , #FFF); /* Standard syntax */ 
+        padding:2.5em 2em 2em 2em;
+        margin-top:1em;
+}
+
+.traditional-list { margin-left: 2em; padding:0.2em;}
+    ol.traditional-list { list-style-type:upper-roman; }
+    ul.traditional-list { list-style-type:circle; }
+    li.traditional-list.true { list-style-image : url("/media/img/admin/icon-yes.gif"); }
+    li.traditional-list.false { list-style-image : url("/media/img/admin/icon-no.gif"); }
+    .done { text-decoration : line-through; }
 

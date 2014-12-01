@@ -130,7 +130,7 @@ select{
 /* COMMON GUI ELEMENTS                                               */
 /* ================================================================= */
 
-
+#main_content { margin-top : 1em; }
 
 
 .title 	 {
@@ -140,10 +140,13 @@ select{
         font-weight: bold; 
    }
 
+/******* Sezioni contenute in header configurazione generale
+............................................................... *******/
+
+
 
 #header {
-	
-	height: 50px;
+	height:auto;
 	border-bottom: 1px solid #aaaaaa;
 	margin: 0 auto 0 auto;
         background: #FFF; 
@@ -152,33 +155,223 @@ select{
 }
 
 #header-content {
-	width:95%;
+	width:96%;
 	padding : 15px 15px 15px 15px;
-	margin-top : 4px;
+	margin-top : 8px;
 	
 	margin-left : 8px;
-	background-color:#eeefff;
+	background-color:#F0FFFF;
         border: 2px solid #fff;
         border-radius: 15px;
         box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
         inset 0px 0px 0px 1px rgba(0,0,0,0.2);
         
-        /* Logo befair: Software Open Source in alto a destra  */
-        background: url('/static/img/logo_labs.png') right top no-repeat;
+        
 }
 
-#navbar a:link, #navbar a:visited, #header a:link, #header a:visited { 
+#header a:link, #header a:visited { 
 	color: #00F; 
 	text-decoration:none; 
         padding:12px;
         font-size : 14px;
 }
 
+
+
 /*
 .header-actions {
 	float:right;
 }
 */
+
+
+
+
+#app_clock { 
+    width:100%;
+    margin-top : 0.1em;
+    float:left;
+    
+}
+
+
+
+/* Scritta di welcome in Gasista Felice prima della a app clock 
+................................................................*/
+
+.logo {
+
+   display:inline;
+}
+
+
+.logo img {
+
+/* Logo befair: Software Open Source in alto a destra  */
+   width:625px;
+   height:51px;     
+   float:right;
+}
+
+
+
+.logo_testuale {
+  font-size:18pt;
+  font-weight: bold; 
+  color: #FFF;	
+  text-shadow:
+	
+	        /* ombre "solide" per creare l'effetto 3D */
+	        0 1px 0 #78AF00,
+	        0 2px 0 #8ABF17,
+	        0 3px 0 #9ECF33,
+	        0 4px 0 #B3DF53,
+	        0 5px 0 #C9EF77,
+	        0 6px 0 #D7EFA4,
+	
+	        /* ombre "vere" per creare l'effetto ombra vero e proprio */
+	        0 6px 1px rgba(0,0,0,.1),
+	        0 0 5px rgba(0,0,0,.1),
+	        0 1px 3px rgba(0,0,0,.3),
+	        0 3px 5px rgba(0,0,0,.2),
+	        0 5px 10px rgba(0,0,0,.25),
+	        0 10px 10px rgba(0,0,0,.2),
+	        0 20px 20px rgba(0,0,0,.15);
+	}
+
+/******* Menu_section in header content configurazione generale
+............................................................... *******/
+
+.right {
+float:right;
+}
+
+.menu_section {
+ display : inline-block; 
+/*Was table-cell sostituito con inline-block più supportato  */
+
+    font-size:11pt;
+    padding : 15px 0.5em 18px 5px;
+    text-align:center;
+    border : 1px solid #fff; 
+    border-radius: 15px 15px 2px 2px;
+    box-shadow: 0px -1px 0px 2px rgba(0,0,0,0.5),
+    inset -15px -5px 10px -2px rgba(0,0,0,0.2);
+    margin-top:2px;
+    width: 80px;
+  
+}
+
+
+.menu_section ul {
+background-color: transparent;
+display : none;
+}
+
+.menu_section li {
+    margin: 0px;
+    padding:  5px 10px 5px 10px;
+    list-style-type: none;
+    background-color: #AFD909;
+    border : 1px solid gray;
+    text-align:left;
+    border-radius: 5px;
+    max-width:300px;
+    box-shadow: 0px -1px 0px 2px rgba(0,0,0,0.5),
+    inset -15px -5px 10px -2px rgba(0,0,0,0.2);
+
+}
+
+.menu_section ul li {float: none; }
+.menu_section:hover ul {
+    display: block; 
+    position: absolute;
+    font-size: 8pt; 
+    /*padding-top: 5px;*/
+    /*color:red;*/ 
+    z-index:99; 
+    }
+
+.menu_section li:hover {background-color: #DCEECD;}
+
+.submenu { 
+    max-height : 500px;
+    overflow : auto;
+}
+
+
+
+
+/* Bottoni del menu section ..*/
+
+/* bottone "Aiuto" (video e forum) 
+...................................*/
+#help_menu , #help_menu li {
+background-color: orange;
+}
+
+#help_menu li:hover {background-color: #FFF;}
+
+
+/* bottone "Ordinare" 
+.......................*/
+#user_urn_gasmember , #user_urn_gasmember li {
+background-color: #9999FF;
+}
+#user_urn_gasmember li:hover {background-color: #00FFFF ;}
+
+/* bottone "Gas" 
+.......................*/
+#user_urn_gas , #user_urn_gas li {
+background-color: #87CEFA;
+}
+#user_urn_gas li:hover {background-color: #B0C4DE;}
+
+/* bottone "Patti" 
+.......................*/
+#user_urn_pact , #user_urn_pact li {
+background-color: #99ffff;
+}
+#user_urn_pact li:hover {background-color: #48D1CC;}
+
+/* bottone "Fornitori" 
+.......................*/
+#user_urn_supplier , #user_urn_supplier li {
+background-color: #7FFF00;
+}
+#user_urn_supplier li:hover {background-color: #9ACD32;}
+
+/* bottone "Cronologia" 
+...........................*/
+#history_menu , #history_menu li,#settings_menu p, #settings_menu li {
+background-color: yellow;
+}
+
+#history_menu li:hover, #settings_menu li:hover {
+background-color: #FFFFE0;
+}
+
+
+/* bottone "Pagina utente" ed "Esci" */
+
+#home_page  {
+ background-color: #FE9;
+}
+
+#home_page a {
+   color:black;
+}
+
+#user_logout  {
+    vertical-align: top;
+    margin-right:10px;
+    width:60px;
+    background: transparent;
+
+}
+
+
+
 
 #body {
 	overflow : hidden;
@@ -204,7 +397,198 @@ select{
         inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 }
 
+/* Added by fero - Gasista Felice */
 
+
+
+
+#page_resource_type { 
+    text-transform:capitalize; 
+    padding-top : 0;
+    margin-top : 0.1em;
+    font-size: 12pt;
+}
+#page_resource { 
+    padding-top : 0;
+    margin-top : 0.1em; 
+}
+
+
+.user{ background-color:#fff; }
+
+
+.blockwizardpage{
+	width:400px;
+	height:250px;
+}
+
+.ctx_enabled {
+}
+
+
+
+.barre_menu { 
+ padding : 1px;
+margin-top : 10px; 
+display:inline;
+}
+
+#user_placeholder { 
+float:right;
+}
+
+#user_data{
+	display: inline;
+}
+#user_data a.top{
+	padding:3px 3px ;
+
+}
+
+#user_data_content{
+	padding: 3px;
+	text-align: right;
+	display:list-item;
+	list-style:none;
+	list-style-position:inside;
+
+}
+
+
+#user_logout img { 
+height:60px;
+width:60px;
+}
+
+
+#validator_icons { 
+float:left;
+}
+
+#validator_icons figure { 
+display:inline;
+width:88px;
+height:31px;
+margin:2px;
+}
+
+
+
+/*Barra di Pollicino
+.......................*/
+
+
+#navbar {
+  
+  width:99%;
+  background-color: #FFF;
+  border: 1px  #D3D3D3;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 14px 14px 4px 4px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
+        inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+   
+}
+
+
+#navbar a:link, #navbar a:visited { 
+	color: #00F; 
+	text-decoration:none; 
+        padding:12px;
+        font-size : 14px;
+}
+
+
+
+#search_input {
+
+	width: 90%;
+	margin: 5px;
+	border-collapse: separate;
+	border: 2px solid black;
+        border-radius: 7px 7px 4px 4px;
+}
+
+#moroptpanel {
+	border-collapse: separate;
+	border: 0px;
+	margin: 5px;
+}
+
+
+#search_results {
+
+	overflow:auto;
+	/*white-space :nowrap;*/
+
+}
+
+
+
+#all_history {
+	overflow   : auto;
+	white-space: nowrap;
+}
+
+
+#ctx_menu_placeholder {
+	background-color: white;
+	border: 1px #505050 solid;
+	padding: 0px;
+	width: 150px;
+}
+
+#ctx_menu_placeholder li:hover {
+	background-color: blue;
+}
+#ctx_menu_placeholder li:hover a {
+	color: white;
+}
+
+#user_notifications {
+    float : right;
+    padding-right: 1em;
+    background: yellow;
+    border: 1px solid orange;
+}
+
+.dbg{background-color: #FFF /* #D3D3D3 orange*/;}
+
+
+
+
+#resource_panel{
+	min-width: 240px;
+}
+
+
+
+
+#moroptpanel {
+    text-align:left;
+    font-weight : lighter;
+    color : blue;
+    font-size:1em
+}
+
+
+
+
+td input[type="text"] { max-width:70%; }
+td input.amount { max-width:3em; text-align : center;}
+
+form p.help, .help {
+    font-weight : bold;
+    color : green;
+}
+
+ul.errorlist { max-width : 400px; }
+.aligned label { 
+    width : 100%; 
+    max-width : 8em; 
+}
 
 #footer {
 	width:95%;
@@ -435,52 +819,7 @@ border:0px;
 .ui-dialog-title { color: #2E9E3B; }
 
 
-/* Added by fero - Gasista Felice */
 
-#page_resource_type { 
-    text-transform:capitalize; 
-    padding-top : 0;
-    margin-top : 0.1em;
-}
-#page_resource { 
-    padding-top : 0;
-    margin-top : 0.1em; 
-}
-
-#main_content { margin-top : 1em; }
-
-
-
-/*Barra di Pollicino
-.......................*/
-
-
-#navbar {
-  
-   
-  background-color: #FFF;
-  border: 1px  #D3D3D3;
-  margin-top: 0.2em;
-  padding: 5px;
-  border-radius: 14px 14px 4px 4px;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
-        inset 0px 0px 0px 1px rgba(0,0,0,0.2);
-   
-}
-
-td input[type="text"] { max-width:70%; }
-td input.amount { max-width:3em; text-align : center;}
-
-form p.help, .help {
-    font-weight : bold;
-    color : green;
-}
-
-ul.errorlist { max-width : 400px; }
-.aligned label { 
-    width : 100%; 
-    max-width : 8em; 
-}
 
 /* css for timepicker */
 .ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
@@ -523,3 +862,11 @@ ul.errorlist { max-width : 400px; }
     overflow-x:hidden;
     overflow-y:hidden;
 }
+
+
+/* ADDED by fero */
+
+#body {
+	min-height:800px;
+}
+

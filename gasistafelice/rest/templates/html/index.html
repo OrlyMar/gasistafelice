@@ -2131,17 +2131,38 @@
         </div>
     </div>
     
-<div id="container">
+<section id="container">
      
      
-  <div id="header-content">
+         <!-- ======================================================================== -->
+         <!-- ************************* HEADER CONTENT ******************************* -->
+         <!-- ======================================================================== -->
+
+
+ <header id="header-content">
+  
+  <section class="logo">
+      <section >
+            <span > <img src="/static/img/logo_labs.png" alt="Logo" title="logo"  /></span>
             <span class ="logo_testuale"> {% trans 'Welcome,' %} in Gasista Felice</span> ;-)
             <span id="user_name" class="user"></span>
-      <div id="app_clock" style="padding:0.2em;"> caricamento in corso...</div>
-                     
-            
-      <div class="right" >
-              <span id='user_data_placeholder'>                   
+      </section>
+
+      <section id="app_clock" class="logo">  caricamento in corso...
+      </section>
+  </section> 
+
+                              
+
+        
+        <!-- Inizio sezione barre menu Risorse ed icone validatori  {html5 e css3 }   -->
+                
+                               
+   <nav id ="barre_menu">  <!-- Inizio sezione barre menu Risorse ed icone validatori  {html5 e css3 } -->
+
+   
+    <section id="user_placeholder" > <!-- Inizio sezione barre Risorse -->
+              <span id="user_data_placeholder">                   
                      
                 <span  id="user_data">
                         <span id="user_urn_gasmember" class="menu_section">
@@ -2195,6 +2216,7 @@
                     <span id="help_menu" class="menu_section">
                         <strong>Aiuto!</strong>
                         <ul id="help_elements" class="submenu">
+                            <li></li>
                             <li><a href="http://readthedocs.org/docs/gasista-felice/en/latest/"  target="_blank">Documentazione</a></li>
                             <li><a href="http://befair.it/supporto/" target="_blank">Chiedi nel FORUM</a></li>
                             <li><a href="http://www.youtube.com/channel/UC8tP2Zl7Zjwx4G3fZGtzByw" target="_blank">Guarda i VIDEO!</a></li>
@@ -2203,34 +2225,42 @@
 
 
                     <span id="user_logout"><a  href="{{ LOGOUT_URL }}"><img src="/static/img/esci00.png" alt="Logout"
-                       title="Bottone di Uscita (Logout)" height="60px" width="60px" /></a></span><!--{% trans "Logout" %}--> </span>
+                       title="Bottone di Uscita (Logout)"  /></a></span><!--{% trans "Logout" %}--> </span>
                 
-        </div>
-                   
+    </section><!-- Fine sezione barra menu section -->
 
-                 <!-- Barra icona e risorsa sotto scritta di benvenuto {gasmember,person,gas} -->
-                <h2 id="page_resource_type"> caricamento in corso... </h2>
-                <span><a href="http://validator.w3.org/check?uri=referer"><img 
-                   src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML " height="31px" width="88px" /></a>
+                   <!-- Inizio barra icone validatori html5 e css3 -->
+    <aside id= "validator_icons" class ="barre_menu">
+
+                <figure><a href="http://validator.w3.org/check?uri=referer"><img 
+                   src="/static/img/html5.jpeg" alt="Valid XHTML "  /></a></figure>
                 
-                      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img 
-                   src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valido!" width="88px" height="31px" /> </a>
-
-                <a href="http://achecker.ca/checker/index.php" title="Explanation of WCAG 2.0 Level Triple-A Conformance">
-               <img height="31" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, 
-          W3C WAI Web Content Accessibility Guidelines 2.0"></a> </span>
-
-
-                <h2 id="page_resource"></h2> 
-               
+                <figure><a href="http://jigsaw.w3.org/css-validator/check/referer"><img 
+                   src="/static/img/vcss-blue.gif" alt="CSS Valido!"  /></a></figure>
                 
-                <div class="clear"></div>
-                <div id="navbar" history="" >
+
+     </aside>
+
+ </nav> <!-- Fine sezione barre menu section ed icone validatori -->
+
+ 
+           <!--Inizio Barre icona e risorsa  {gasmember,person,gas}  -->
+ <section > 
+
+                <h2 id="page_resource_type" class="clear" >  </h2>
+                <h2 id="page_resource" class="clear" > caricamento in corso...  </h2>
+                
+ </section>
+
+ <section id="navbar"  >
                     <ul id="navbar_elements">
                     </ul>
-                </div>
-         </div>
-            <div class="clear"> </div>
+ </section>
+
+
+</header> <!-- end of Header  -->
+            
+
 
         <!-- ===================== -->
         <!-- Start of main content -->
@@ -2249,8 +2279,8 @@
                 <div class="block" id="history">
                     <div class="block_header">
                         <div class="right toolbar">
-                            <span class="toggle_clear"><img class="header_button" src="" title="{% trans 'Refresh history' %}" onclick='return clear_history()'/></span> <!-- Aggiorna cronologia -->
-                            <span class="toggle_show"><img class="header_button" src="" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
+                            <span class="toggle_clear"><img class="header_button" src="/Ciao" title="{% trans 'Refresh history' %}" onclick='return clear_history()'/></span> <!-- Aggiorna cronologia -->
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
                         </div>
                         <h1 class="block-title" >{% trans "History" %}</h1> <!-- Cronologia -->
                     </div>
@@ -2272,7 +2302,7 @@
                     <div class="block_header">
                         <div class="right toolbar">
                             <span class="toggle_show">
-                            <img class="header_button" src="" title="{% trans 'Minimize block' %}"/> <!-- Riduci blocco -->
+                            <img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/> <!-- Riduci blocco -->
                             </span>
                         </div>
                         <h1 class="block-title"> {% trans "User actions" %} </h1>  <!-- Azioni Utente -->
@@ -2299,8 +2329,8 @@
                 <div class="block">
                     <div class="block_header ">
                         <div class="right toolbar">
-                            <img class="header_button toggle_refresh hide_on_toggle" src="" onclick="return reload_usercontainer_tree()"/>
-                            <span class="toggle_show"><img class="header_button" src="" title="Riduci blocco"/></span>
+                            <img class="header_button toggle_refresh hide_on_toggle" src="/Ciao" onclick="return reload_usercontainer_tree()"/>
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" alt ="DA Immettere" title="Riduci blocco"/></span>
                         </div>
                         <h1 class="block-title">{% trans "User container" %} </h1> <!-- Contenitore utente-->
                     </div>
@@ -2313,8 +2343,8 @@
             </div>
 
             <div id="separator" style="float:left">
-                <img id='separator_gap' src="{{ MEDIA_URL }} nui/img/1x1.gif"/> <br/>
-                <img id='separator_button'/>
+                <img id="separator_gap" src="{{ MEDIA_URL }} nui/img/1x1.gif" alt ="DA Immettere"/> <br/>
+                <img id="separator_button" alt ="DA Immettere" src="/Ciao" />
             </div>
 ###  fero -- before end #resource_panel{% endcomment %}
 
@@ -2323,8 +2353,8 @@
         <div id="right_column_wrapper" style="float:right;">
         
             <div id="right_separator" style="float:left">
-                <img id="right_separator_gap" src="{{ MEDIA_URL }}nui/img/1x1.gif" /> <br/>
-                <img id="right_separator_button"/>
+                <img id="right_separator_gap" src="{{ MEDIA_URL }}nui/img/1x1.gif" alt ="DA Immettere" /> <br/>
+                <img id="right_separator_button" alt ="DA Immettere" src="/Ciao" />
             </div>
             <div id="notifications-panel" class="panel">
             
@@ -2335,7 +2365,7 @@
                 <div class="block" id="search">
                     <div class="block_header ui-corner-top">
                         <div class="right toolbar">
-                            <span class="toggle_show"><img class="header_button" src="" title="{% trans "Minimize block" %}"/></span>
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/></span>
                         </div>
                         <h1 class="block-title">{% trans "Search" %}</h1> <!-- Ricerca --> {# title should be "Search in resource(DES)" #}
                     </div>
@@ -2363,52 +2393,55 @@
                                     <input id="moropt" type="button" value="{% trans 'Options' %}" name="advanced_research" ><!-- Options -->
                                     {% comment %}| <a href="#rest/advanced-search-page">{% trans "Advanced" %}</a> {% endcomment %}
 
-                                    <fieldset id="moroptpanel" style="text-align:left; font-size:0.8em">
+                          <fieldset id="moroptpanel">
 
-                                        <fieldset style="text-align:left;">
-                                            <legend>{% trans "Order" %}</legend>
-                                            <input type="checkbox" name="l" value="ogn" checked="checked" /><label>{% trans "GAS name" %}</label><br/>
-                                            <input type="checkbox" name="l" value="osn" checked="checked" /><label>{% trans "Supplier name" %}</label><br/>
-                                        </fieldset>
-                                        <fieldset style="text-align:left;">
-                                            <legend>{% trans "Supplier" %}</legend>
-                                            <input type="checkbox" name="l" value="sn" checked="checked" /><label>{% trans "Name" %}</label> <br/>
-                                        </fieldset>
-                                        <fieldset style="text-align:left;">
-                                            <legend>GAS</legend>
-                                            <input type="checkbox" name="l" value="gn" checked="checked" /><label>{% trans "Name" %}</label> <br/>
-                                        </fieldset>
-                                        <fieldset style="text-align:left;">
-                                            <legend>{% trans "Person" %}</legend>
-                                            <input type="checkbox" name="l" value="pn" checked="checked" /><label>{% trans "Name" %}</label> <br/>
-                                            <input type="checkbox" name="l" value="ps" checked="checked" /><label>{% trans "Surname" %}</label><br/>
-                                        </fieldset>
-                                        <fieldset style="text-align:left;">
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <div id="search_results"> </div>
-                        </div>
+                              <fieldset style="text-align:left;">
+                                  <legend>{% trans "Order" %}</legend>
+                                  <input type="checkbox" name="l" value="ogn" checked="checked" /><label>{% trans "GAS name" %}</label><br/>
+                                  <input type="checkbox" name="l" value="osn" checked="checked" /><label>{% trans "Supplier name" %}</label><br/>
+                              </fieldset>
+
+                              <fieldset style="text-align:left;">
+                                   <legend>{% trans "Supplier" %}</legend>
+                                   <input type="checkbox" name="l" value="sn" checked="checked" /><label>{% trans "Name" %}</label> <br/>
+                              </fieldset>
+
+                              <fieldset style="text-align:left;">
+                                   <legend>GAS</legend>
+                                   <input type="checkbox" name="l" value="gn" checked="checked" /><label>{% trans "Name" %}</label> <br/>
+                               </fieldset>
+
+                               <fieldset style="text-align:left;">
+                                    <legend>{% trans "Person" %}</legend>
+                                    <input type="checkbox" name="l" value="pn" checked="checked" /><label>{% trans "Name" %}</label> <br/>
+                                    <input type="checkbox" name="l" value="ps" checked="checked" /><label>{% trans "Surname" %}</label><br/>
+                               </fieldset>
+                                        
+                             </fieldset>
+                        </form>
                     </div>
-                </div> <!-- blocco search -->
+                            <div id="search_results"> </div>
+                 </div>
+               </div>
+            </div> <!-- blocco search -->
+
+
                 <!-- =============================================== -->
                 <!-- NOTIFICATIONS BOX                               -->
                 <!-- =============================================== -->
 
-                <div class="block" id="user-notifications">
-                    <div class="block_header ui-corner-top">
-                        <div class="right toolbar">
-                            <img class="header_button toggle_refresh hide_on_toggle"
-                                 src=""
-                                 onclick="return refresh_user_notifications()"/>
-                            <span class="toggle_show"><img class="header_button" src="" title="{% trans 'Minimize block' %}"/></span>
-                        </div>
+          <div class="block" id="user-notifications">
+            <div class="block_header ui-corner-top">
+                  <div class="right toolbar">
+                   <img class="header_button toggle_refresh hide_on_toggle" alt="ciao" src="/Ciao" onclick="return refresh_user_notifications()"/>
+                   <span class="toggle_show"><img class="header_button" src="/Ciao" alt="ciao" title="{% trans 'Minimize block' %}"/></span>
+                  </div>
                         <h1 class="block-title">{% trans "Notifications" %}</h1> <!-- Notifiche -->
-                    </div>
+             </div>
 
-                    <div class="block_body" id="all_notifications" is_open="1">
+                   <div class="block_body" id="all_notifications" ><!-- WAS inside:   is_open="1" -->
 
-                    </div>
+                   </div>
                 </div> <!-- blocco notifiche -->
 
                 <!-- =============================================== -->
@@ -2420,9 +2453,9 @@
 
                         <div class="right toolbar">
                             <img class="header_button toggle_refresh hide_on_toggle"
-                                 src=""
+                                 src="/Ciao"
                                  onclick='return refresh_user_notes()'/>
-                            <span class="toggle_show"><img class="header_button" src="" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
                         </div>
 
                         <h1 class="block-title" >{% trans "Notes" %} (<span id="notes-count">0</span>)</h1> <!-- Note -->
@@ -2515,7 +2548,7 @@
                 
         <span class="block_menu_trigger  hide_on_toggle"><img src="{{ MEDIA_URL }}nui/img/menu.png" alt="Da Immettere" ></span>
           <ul class='block_menu_entries'>
-            <li class="toggle_refresh" ><img class="header_button" src="" title="{% trans 'Refresh block now' %}" alt="Da Immettere" >
+            <li class="toggle_refresh" ><img class="header_button" src="/Ciao" title="{% trans 'Refresh block now' %}" alt="Da Immettere" >
                  <span class="item">{% trans "Refresh block now" %}</span></li>
 
 
@@ -2523,26 +2556,26 @@
                                          <!--TODO fero TOCHECK-->
 
 
-       <li class="add_to_profile nouser"><img class="header_button" src="" height="10px" width="10px" title="{% trans 'Add to my page' %}"
+       <li class="add_to_profile nouser"><img class="header_button" src="/Ciao" height="10px" width="10px" title="{% trans 'Add to my page' %}"
         alt="Da Immettere" ><span class="item">{% trans "Add to my page" %}</span></li>
-       <li class="configure"><img class="header_button" src="" height="10px" width="10px" title="{% trans 'Customize block's settings' %}"
+       <li class="configure"><img class="header_button" src="/Ciao" height="10px" width="10px" title="{% trans 'Customize block's settings' %}"
         alt="Da Immettere" ><span class="item">{% trans "Customize block's settings" %}</span></li>
        <li> <hr/> </li>
 {% endcomment %}
-        <li class="toggle_fullscreen"><img class="header_button" src="" title="{% trans 'Set to full screen' %}" 
+        <li class="toggle_fullscreen"><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
          alt="Da Immettere"><span class="item">{% trans "Set to full screen" %}</span></li>
-        <li class="toggle_show"><img class="header_button" src=""  title="{% trans 'Minimize block' %}" 
+        <li class="toggle_show"><img class="header_button" src="/Ciao"  title="{% trans 'Minimize block' %}" 
          alt="Da Immettere" ><span class="item">{% trans "Minimize block" %}</span></li>
     </ul>
                     
         </div>
                 
         <div name= "right_toolbar"  class="right toolbar">
-            <span class="toggle_fullscreen hide_on_toggle" ><img class="header_button" src="" title="{% trans 'Set to full screen' %}" 
+            <span class="toggle_fullscreen hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
              alt="Da Immettere" ></span>
-            <span class="toggle_refresh hide_on_toggle" ><img class="header_button" src="" title="{% trans 'Refresh block now'  %}" 
+            <span class="toggle_refresh hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Refresh block now'  %}" 
              alt="Da Immettere" ></span>
-            <span class="toggle_show"><img class="header_button" src="" title="{% trans 'Minimize block' %}" 
+            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}" 
              alt="Da Immettere" ></span>
                 </div>
 
@@ -2591,6 +2624,6 @@
     </div>
 
     <div id="log"></div>
-    </div> <!-- end of #container -->
+</section> <!-- end of #container -->
 </body>
 </html>
