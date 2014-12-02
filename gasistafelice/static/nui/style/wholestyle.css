@@ -130,7 +130,11 @@ select{
 /* COMMON GUI ELEMENTS                                               */
 /* ================================================================= */
 
-#main_content { margin-top : 1em; }
+#main_content {
+
+         margin-top : 1em; 
+         width:100%;
+}
 
 
 .title 	 {
@@ -252,14 +256,14 @@ float:right;
 /*Was table-cell sostituito con inline-block più supportato  */
 
     font-size:11pt;
-    padding : 15px 0.5em 18px 5px;
+    padding : 10px 0.5em 18px 5px;
     text-align:center;
     border : 1px solid #fff; 
     border-radius: 15px 15px 2px 2px;
     box-shadow: 0px -1px 0px 2px rgba(0,0,0,0.5),
     inset -15px -5px 10px -2px rgba(0,0,0,0.2);
     margin-top:2px;
-    width: 80px;
+    width: 60px;
   
 }
 
@@ -344,9 +348,15 @@ background-color: #7FFF00;
 
 /* bottone "Cronologia" 
 ...........................*/
-#history_menu , #history_menu li,#settings_menu p, #settings_menu li {
+#history_menu.menu_section,#history_menu , #history_menu li,#settings_menu p, #settings_menu li {
 background-color: yellow;
+
 }
+
+#history_menu.menu_section {
+width: 80px !important;
+}
+
 
 #history_menu li:hover, #settings_menu li:hover {
 background-color: #FFFFE0;
@@ -365,7 +375,7 @@ background-color: #FFFFE0;
 
 #user_logout  {
     vertical-align: top;
-    margin-right:10px;
+    margin-right:1px;
     width:60px;
     background: transparent;
 
@@ -381,7 +391,7 @@ background-color: #FFFFE0;
 
 
 #body_content {
-        width:94%;
+        width:96%;
         border-top: 1px solid #aaa;
 	color: #000;
 	background-color : #fff;
@@ -397,6 +407,15 @@ background-color: #FFFFE0;
         box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
         inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 }
+
+
+#right_column_wrapper {
+        float:right;
+}
+
+
+
+
 
 /* Added by fero - Gasista Felice */
 
@@ -457,7 +476,7 @@ float:right;
 
 
 #user_logout img { 
-height:60px;
+height:55px;
 width:60px;
 }
 
@@ -643,20 +662,25 @@ ul.errorlist { max-width : 400px; }
 border:0px;
 }
 
+
+
+#separator {
+	background-color: #eee;
+	float:left;
+}
+
+#right_separator {
+	background-color: #eee;
+	float:left;
+}
+
 #separator_button {
 }
-
-#separator, #right_separator {
-	background-color: #eee;
-}
-
-
-
 
 
 .block { 
 	background: transparent;
-	
+        width: 100%;	
 	list-style-type:none;
 	
 	position : relative;
@@ -669,6 +693,7 @@ border:0px;
 	border-bottom : 1px solid transparent;
 	border-collapse : collapse;
 	min-width : 200px;
+
 }
 .block_header {
 	background-color : #eeeeee;
@@ -676,11 +701,11 @@ border:0px;
 	padding-top:5px;
 	height : 21px;
 	border-collapse : collapse;
-    margin-top : -2px;
-    margin-bottom : 2px;
+        margin-top : -2px;
+        margin-bottom : 2px;
 }
 
-.block-title {
+.block-title {  
 	text-align : left;
 	font-size: 14px;
 	padding : 0;
@@ -863,6 +888,10 @@ border:0px;
     overflow-x:hidden;
     overflow-y:hidden;
 }
+
+
+
+
 
 
 /* ADDED by fero */

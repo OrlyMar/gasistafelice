@@ -2,16 +2,26 @@
 {% load i18n %}
 
 {% block headers %}
-    <th>{% trans "Id" %}</th>
-    <th>{% trans "Order" %}</th>
-    <th>{% trans "Amount" %}</th>
-    <th>{% trans "Members" %}</th>
-    <th>{% trans "Ordered price" %}</th>
-    <th>{% trans "Invoice" %}</th>
-    <th>{% trans "Gasmember's curtail sum" %}</th>
-    <th>{% trans "Payment" %}</th>
-{% endblock %}
+<header class="leggenda">
+<h2>Leggenda:</h2>
+<ul>
+<li><strong>A = </strong> Prezzo previsto dal totale dell' ordine inviato</li>
+<li><strong>B = </strong> Totale decurtazioni fatte ai gasisti </li>
 
+</ul>
+<hr>
+</header>
+
+    <th title="{% trans 'Id' %}">{% trans 'Id' %}</th>
+    <th title="{% trans 'Order' %}">{% trans 'Order' %}</th>
+    <th title="{% trans 'Amount' %}">{% trans 'Amount' %}</th>
+    <th title="{% trans 'Members' %}">{% trans 'Members' %}</th>
+    <th title="{% trans 'Ordered price' %}">A</th>
+    <th>{% trans "Invoice" %}</th>
+    <th>B <!-- WAS{% trans "Gasmember's curtail sum" %}--></th>
+    <th>{% trans "Payment" %}</th>
+
+{% endblock %}
 
 
 

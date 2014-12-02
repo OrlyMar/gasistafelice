@@ -2,12 +2,22 @@
 {% load i18n %}
 
 {% block headers %}
-    <th>{% trans "Id" %}</th>
-    <th>{% trans "Product" %}</th>
-    <th>{% trans "Price" %}</th>
-    <th title='{% trans "Price changed" %}'>&#8364;&lt;&gt;</th>
-    <th title='{% trans "TOT GAS members" %}'>{% trans "GASMember" %}</th>
-    <th title='{% trans "Num of un confirmed gasmember orders" %}'>{% trans "n° UnC" %}</th>
+<header class="leggenda">
+<h2>Leggenda:</h2>
+<ul>
+<li><strong>A = </strong> Eventuali cambiamenti di prezzo in corso d' ordine</li>
+<li><strong>B = </strong> Totale dei gasisti (famiglie) che hanno ordinato il prodotto </li>
+<li><strong>C = </strong> Totale degli eventuali ordini non confermati </li>
+</ul>
+<hr>
+</header>
+
+    <th title='{% trans "Id" %}'>{% trans "Id" %}</th>
+    <th title='{% trans "Product" %}'>{% trans "Product" %}</th>
+    <th title='{% trans "Price" %}'>{% trans "Price" %}</th>
+    <th title='{% trans "Price changed" %}'> A </th> 
+    <th title='{% trans "TOT GAS members" %}'> B <!--WAS{% trans "GASMember" %}--> </th> 
+    <th title='{% trans "Num of un confirmed gasmember orders" %}'>C<!--WAS{% trans "n° UnC" %}--></th>
     <th title='{% trans "Ordered amount" %}'>{% trans "Amount" %}</th>
     <th title='{% trans "Ordered total" %}'>{% trans "Total" %}</th>
     <th>{% trans "Available" %}</th>

@@ -38,7 +38,7 @@
 }
 
 .hand {cursor: pointer;}
-.dataTables_wrapper{width:95%}
+
 td input[type="text"] {max-width: 95%;}
 .input_small{width:40px; color: blue;}
 .input_short{width:70px; color: blue;}

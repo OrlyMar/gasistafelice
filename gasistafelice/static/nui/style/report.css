@@ -195,7 +195,7 @@
 /*Reports
 .........*/
 .totfield {
-	font-size:1.2em;
+	font-size:1.5em;
 	font-weight:bold;
 	color:#136E6F;
 	text-align:right;
@@ -203,11 +203,11 @@
 	}
 
 .totvalue {
-    font-size:1.4em;
+    font-size:1.6em;
     font-weight:bold;
     color:#005687;
     background-color:#aafaff;
-    text-align:right;
+    text-align:center;
     font-family: Monospace, Arial;
     margin:5px 3px;
     vertical-align:middle;
@@ -221,7 +221,7 @@
 	}
 	    
 .taright {
-	text-align:right;
+	text-align:center;
 	vertical-align:middle;
 	}
 	
@@ -242,8 +242,9 @@
    
 .dataTable tr td {
 	vertical-align:middle;
+        text-align:center;
 	}
 	
 th.taright {
-	text-align:left;
+	text-align:center;
 	}
