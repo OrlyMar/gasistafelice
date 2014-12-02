@@ -2,11 +2,11 @@
 {% load i18n %}
 
 {% block headers %}
-<header class="leggenda">
-<h2>Leggenda:</h2>
+<header class="legenda">
+<h2>Legenda:</h2>
 <ul>
-<li><strong>A = </strong> Prezzo previsto dal totale dell' ordine inviato</li>
-<li><strong>B = </strong> Totale decurtazioni fatte ai gasisti </li>
+<li><strong>A = </strong> Prezzo previsto dal totale dell' ordine iniziale</li>
+<li><strong>B = </strong> Totale delle decurtazioni fatte ai gasisti </li>
 
 </ul>
 <hr>

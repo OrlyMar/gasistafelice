@@ -2,8 +2,8 @@
 {% load i18n %}
 
 {% block headers %}
-<header class="leggenda">
-<h2>Leggenda:</h2>
+<header class="legenda">
+<h2>Legenda:</h2>
 <ul>
 <li><strong>A = </strong> Eventuali cambiamenti di prezzo in corso d' ordine</li>
 <li><strong>B = </strong> Totale dei gasisti (famiglie) che hanno ordinato il prodotto </li>

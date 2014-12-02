@@ -239,9 +239,9 @@ tr.even {
 
 /* Orly Add */
 
-.leggenda ul {
+.legenda ul {
 
-	width: 35%;
+	width: 40%;
 	background-color: #F0FFFF;
 	border: 2px solid #fff;
         border-radius: 1px;
@@ -250,19 +250,19 @@ tr.even {
         margin-left: 10px;
 }
 
-.leggenda h2{
-        font-size: 14px;
+.legenda h2{
+        font-size: 15px;
         color: blue;
         text-align: left;
 	line-height: 18px;
         margin-left: 10px;
 }
 
-.leggenda li{
-        font-size: 12px;
+.legenda li{
+        font-size: 13px;
         color: black;
         text-align: left;
-	line-height: 15px;
+	line-height: 16px;
         margin-left: 10px;
 }
 
