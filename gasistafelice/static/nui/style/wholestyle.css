@@ -1,152 +1,20 @@
-
-/* ================================================================= */
-/* "CONSTANTS"                                                       */
-/* ================================================================= */
-
-.smaller{
-	font-size:0.8em;
-}
-.hidden {
-	display:none;
-}
-
-.right { float: right; }
-
-.left { float: left; }
-
-/*
-a:link, a:visited {
-	color: #5B80B2;
-	text-decoration: none;
-}*/
-
-a:link, a:visited {
-	color: #0000EE;
-	text-decoration: none  ;
-}
-
-/* ================================================================= */
-/* HTML ELEMENTS                                                     */
-/* ================================================================= */
-
-html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {
-	margin:0;
-	padding:0;
-}
-
-img, body, html {
-	border:0;
-}
-
-/*
-address,caption,cite,code,dfn,em,strong,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-*/
-
-ol,ul {
-	list-style:none;
-}
-
-/*
-caption,th {
-	text-align:left;
-}
-*/
-
-/*
-h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-}
-*/
-
-
-/*
-q:before, q:after {
-	content:'';
-}
-*/
-
-
-body {
-	font-family: verdana, arial, helvetica;
-	font-size : 16px;
-	
-	/*padding: 0 0 2px 0;*/
-
-	background-color : white;
-	color: black;
-}
-
-h1 { font-size: 26px; margin: 0px; padding: 0px; color: #000;  }
-h2 { font-size: 12px; padding-top: 12px; font-weight: bold; color: #004400 }
-h3 { font-weight: bold; color: #003300 }
-h4 { font-weight: bold; color: #002200 }
-
-
-/* 
- * HTML FORMS
- */
-
-input, textarea, select { 
-	font-size : 14px;
-	border : 2px groove transparent;
-} 
-
-
-
-button, img.plusminus:hover {
-	cursor : pointer;
-}
-
-button[disabled] {
-	cursor : default;
-	background-color : transparent;
-	border : 0;
-}
-
-input[readonly], input[disabled], textarea[disabled], textarea[readonly] { 
-	background-color : #D3D3D3;
-	color : gray;
-}
-
-select   { 
-	min-width:110px; 
-}
-
-table {
-	width:100%;
-	/*table-layout:auto;*/
-}
-
-select{
-	/*width:100%;*/
-	max-height:200px;
-}
-
-
-/* ================================================================= */
-/* COMMON GUI ELEMENTS                                               */
-/* ================================================================= */
+/*|******************************************** WHLOLESTYLE CSS *****************************************|*/
+/*| ==================================================================================================== |*/
+/*| ******************************************* COMMON GUI ELEMENTS ************************************ |*/
+/*| ==================================================================================================== |*/
 
 #main_content {
 
          margin-top : 1em; 
-         width:100%;
+         width:98%;
 }
 
+#body {
 
-.title 	 {
-	background: none; 
-	color: #000000;
-        font-size: 13px; 
-        font-weight: bold; 
-   }
-
-/******* Sezioni contenute in header configurazione generale
-............................................................... *******/
-
+	min-height:800px;
+	overflow : hidden;
+	/*border-left: 1px solid #aaa;*/
+}
 
 
 #header {
@@ -157,6 +25,41 @@ select{
         /*Was background: #FFF; url('/static/logo_labs.jpg') left top no-repeat;
 	      background: #FFF; url('/static/logo_cliente.jpg') right top no-repeat;  */
 }
+
+#right_column_wrapper {
+        max-width:25%;
+        float:right;
+	font-size: 90%;
+}
+
+#footer {
+	width:95%;
+        color: #000;
+	padding : 15px 15px 15px 15px;
+	margin-top : 4px;
+	
+	margin-left : 8px;
+	margin-bottom:10px;
+        background-color:#fff;
+	font-size: 90%;
+	text-align: center;
+	clear : both;
+	/*Was  position:fixed; */
+	/*Was  bottom:1px;*/
+	
+        border: 2px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
+        inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+
+}
+
+
+/*************** Sezioni contenute in header content configurazione generale*************************
+=============================================================================================
+..................................................................................... *******/
+
+
 
 #header-content {
 	width:96%;
@@ -244,12 +147,38 @@ select{
 	        0 20px 20px rgba(0,0,0,.15);
 	}
 
-/******* Menu_section in header content configurazione generale
-............................................................... *******/
+/******* barre Menu Risorse {Ordinare,Gas,Patti ecc...} ed icone validatori {html5 e css3 }
+................................................................................... *******/
 
-.right {
+
+.barre_menu { 
+     padding : 1px;
+     margin-top : 10px; 
+     display:inline;
+}
+
+#user_placeholder { 
 float:right;
 }
+
+#user_data{
+	display: inline;
+}
+#user_data a.top{
+	padding:3px 3px ;
+
+}
+
+#user_data_content{
+	padding: 3px;
+	text-align: right;
+	display:list-item;
+	list-style:none;
+	list-style-position:inside;
+
+}
+
+/*******Inizio sezione barra Menu Risorse {Ordinare,Gas,Patti ecc...} *******/
 
 .menu_section {
  display : inline-block; 
@@ -303,8 +232,6 @@ display : none;
     max-height : 500px;
     overflow : auto;
 }
-
-
 
 
 /* Bottoni del menu section ..*/
@@ -383,101 +310,9 @@ background-color: #FFFFE0;
 
 
 
-
-#body {
-	overflow : hidden;
-	/*border-left: 1px solid #aaa;*/
-}
-
-
-#body_content {
-        width:96%;
-        border-top: 1px solid #aaa;
-	color: #000;
-	background-color : #fff;
-	padding : 15px 15px 15px 15px;
-	margin-top : 4px;
-	
-	margin-left : 14px;
-	font-size: 90%;
-	text-align: left;
-	clear : both;
-	border: 2px solid #fff;
-        border-radius: 1px;
-        box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
-        inset 0px 0px 0px 1px rgba(0,0,0,0.2);
-}
-
-
-#right_column_wrapper {
-        float:right;
-}
-
-
-
-
-
-/* Added by fero - Gasista Felice */
-
-
-
-
-#page_resource_type { 
-    text-transform:capitalize; 
-    padding-top : 0;
-    margin-top : 0.1em;
-    font-size: 12pt;
-}
-#page_resource { 
-    padding-top : 0;
-    margin-top : 0.1em; 
-}
-
-
-.user{ background-color:#fff; }
-
-
-.blockwizardpage{
-	width:400px;
-	height:250px;
-}
-
-.ctx_enabled {
-}
-
-
-
-.barre_menu { 
- padding : 1px;
-margin-top : 10px; 
-display:inline;
-}
-
-#user_placeholder { 
-float:right;
-}
-
-#user_data{
-	display: inline;
-}
-#user_data a.top{
-	padding:3px 3px ;
-
-}
-
-#user_data_content{
-	padding: 3px;
-	text-align: right;
-	display:list-item;
-	list-style:none;
-	list-style-position:inside;
-
-}
-
-
 #user_logout img { 
-height:55px;
-width:60px;
+          height:55px;
+          width:60px;
 }
 
 
@@ -519,6 +354,223 @@ margin:2px;
         padding:12px;
         font-size : 14px;
 }
+
+
+
+
+/*************** Sezioni contenute in BODY Content configurazione generale **************************
+=====================================================================================================
+............................................................................................ *******/
+
+
+
+
+
+#body_content {
+        min-width:75%;
+        border-top: 1px solid #aaa;
+	color: #000;
+	background-color : #fff;
+	padding : 15px 15px 15px 15px;
+	margin-top : 4px;
+	
+	margin-left : 14px;
+	font-size: 90%;
+	text-align: left;
+	clear : both;
+	border: 2px solid #fff;
+        border-radius: 1px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
+        inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+}
+
+.title 	 {
+	background: none; 
+	color: #000000;
+        font-size: 13px; 
+        font-weight: bold; 
+   }
+
+
+
+/* ================================================================= */
+/* "CONSTANTS"                                                       */
+/* ================================================================= */
+
+.smaller{
+	font-size:0.8em;
+}
+.hidden {
+	display:none;
+}
+
+.right { float: right; }
+
+.left { float: left; }
+
+
+/*|==================================================================|*/
+/*|********************** HTML ELEMENTS *****************************|*/
+/*|==================================================================|*/
+
+
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: verdana, arial, helvetica;
+	font-size : 16px;
+	
+	/*padding: 0 0 2px 0;*/
+
+	background-color : white;
+	color: black;
+}
+
+
+img, body, html {
+	border:0;
+}
+
+a:link, a:visited {
+	color: #0000EE;
+	text-decoration: none  ;
+}
+
+/*
+a:link, a:visited {
+	color: #5B80B2;
+	text-decoration: none;
+}*/
+
+
+
+table {
+	width:100%;
+	/*table-layout:auto;*/
+}
+
+
+ol,ul {
+	list-style:none;
+}
+
+
+
+h1 { font-size: 26px; margin: 0px; padding: 0px; color: #000;  }
+h2 { font-size: 12px; padding-top: 12px; font-weight: bold; color: #004400 }
+h3 { font-weight: bold; color: #003300 }
+h4 { font-weight: bold; color: #002200 }
+
+
+/*
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+}
+*/
+
+
+
+/*  HTML FORMS
+.............. */
+
+input, textarea, select { 
+	font-size : 14px;
+	border : 2px groove transparent;
+} 
+
+input[readonly], input[disabled], textarea[disabled], textarea[readonly] { 
+	background-color : #D3D3D3;
+	color : gray;
+}
+
+
+button, img.plusminus:hover {
+	cursor : pointer;
+}
+
+button[disabled] {
+	cursor : default;
+	background-color : transparent;
+	border : 0;
+}
+
+
+select   { 
+	min-width:110px; 
+}
+
+
+
+
+select{
+	/*width:100%;*/
+	max-height:200px;
+}
+
+
+
+/*
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+*/
+
+
+/*
+caption,th {
+	text-align:left;
+}
+*/
+
+
+/*
+q:before, q:after {
+	content:'';
+}
+*/
+
+
+
+
+
+
+
+
+
+/* Added by fero - Gasista Felice */
+
+
+
+
+#page_resource_type { 
+    text-transform:capitalize; 
+    padding-top : 0;
+    margin-top : 0.1em;
+    font-size: 12pt;
+}
+#page_resource { 
+    padding-top : 0;
+    margin-top : 0.1em; 
+}
+
+
+.user{ background-color:#fff; }
+
+
+.blockwizardpage{
+	width:400px;
+	height:250px;
+}
+
+.ctx_enabled {
+}
+
+
 
 
 
@@ -579,9 +631,6 @@ margin:2px;
 
 
 
-#resource_panel{
-	min-width: 240px;
-}
 
 
 
@@ -610,27 +659,7 @@ ul.errorlist { max-width : 400px; }
     max-width : 8em; 
 }
 
-#footer {
-	width:95%;
-        color: #000;
-	padding : 15px 15px 15px 15px;
-	margin-top : 4px;
-	
-	margin-left : 8px;
-	margin-bottom:10px;
-        background-color:#fff;
-	font-size: 90%;
-	text-align: center;
-	clear : both;
-	/*Was  position:fixed; */
-	/*Was  bottom:1px;*/
-	
-        border: 2px solid #fff;
-        border-radius: 15px;
-        box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
-        inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 
-}
 
 
 .panel {
@@ -641,9 +670,12 @@ ul.errorlist { max-width : 400px; }
 	max-width  : 300px;
 }
 
-#resource_panel {
-	float : left;
+
+#resource_panel{
+	min-width: 240px;
+        float : left;
 }
+
 
 .resource_panel_expand_button_visible {
 	/*
@@ -664,15 +696,12 @@ border:0px;
 
 
 
-#separator {
+#separator, #right_separator {
 	background-color: #eee;
 	float:left;
 }
 
-#right_separator {
-	background-color: #eee;
-	float:left;
-}
+ 
 
 #separator_button {
 }
@@ -793,13 +822,7 @@ border:0px;
 	background-color : #D3D3D3; 
 }
 
-.target_table .odd {
-	border-bottom: 1px solid #999999;
-}
 
-.target_table td {
-	border-right: 1px solid  #999999;
-}
 
 .row.UP {
 	 background-color : #ABFFA1;
@@ -816,6 +839,14 @@ border:0px;
 
 /* TARGETS
 ............... */
+
+.target_table .odd {
+	border-bottom: 1px solid #999999;
+}
+
+.target_table td {
+	border-right: 1px solid  #999999;
+}
 
 .target.UP {
 	list-style-image : url('/static/theme/img/resources/target_UP.png');
@@ -887,16 +918,5 @@ border:0px;
     height:200%;
     overflow-x:hidden;
     overflow-y:hidden;
-}
-
-
-
-
-
-
-/* ADDED by fero */
-
-#body {
-	min-height:800px;
 }
 
