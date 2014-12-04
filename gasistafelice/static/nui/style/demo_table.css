@@ -190,7 +190,7 @@ tr.even {
 .dataTables_wrapper {
 
         margin : 0 auto;
-        width:98%
+        width:98%;
 	position: relative;
 	min-height: 400px;
 	clear: both;
