@@ -367,7 +367,7 @@ margin:2px;
 
 
 #body_content {
-        min-width:75%;
+        width:95%;
         border-top: 1px solid #aaa;
 	color: #000;
 	background-color : #fff;
@@ -399,7 +399,7 @@ margin:2px;
    border-radius: 14px 14px 0px 0px;
    box-shadow: 0px 0px 3px rgba(0,0,0,0.2),
         inset 0px 0px 0px 1px rgba(0,0,0,0.2);
-   padding: 5px 5px 5px 5px;
+   padding: 10px 5px 5px 5px;
    }
 
 
@@ -641,8 +641,9 @@ q:before, q:after {
 	color: white;
 }
 
-#user_notifications {
-    float : right;
+.user_notifications {
+    /*display:none;*/
+    float : left;
     padding-right: 1em;
     background: yellow;
     border: 1px solid orange;
@@ -784,6 +785,7 @@ border:0px;
 /*
 .block .block_body#details {
 	max-height : 1024px;
+
 }
 */
 
@@ -793,6 +795,12 @@ border:0px;
 	overflow : auto;
 	/*padding-top: 2px;
 	padding-bottom: 2px;*/
+}
+
+
+.block .block_body li {
+	padding:2px;
+        
 }
 
 .block_menu_entries li {

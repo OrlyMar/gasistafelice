@@ -19,8 +19,8 @@ jQuery.UIBlockStockList = jQuery.UIBlockWithList.extend({
                 "sAjaxSource": this.get_data_source(),
                 "aoColumns": [
                     {"bSearchable":true,"bSortable":true,"sWidth":"10%","bVisible":true},
-                    {"bSearchable":true,"bSortable":true,"sWidth":"50%","bVisible":true},
-                    {"bSearchable":true,"bSortable":true,"sWidth":"20%","bVisible":true,
+                    {"bSearchable":true,"bSortable":true,"sWidth":"50%","bVisible":true,"sClass": "left_text"},
+                    {"bSearchable":true,"bSortable":true,"sWidth":"20%","bVisible":true,"sClass": "left_text",
                       "fnRender": function ( oObj ) {
                             var _category = oObj.aData[ oObj.iDataColumn ];
                             var _category_list = _category.split('::');

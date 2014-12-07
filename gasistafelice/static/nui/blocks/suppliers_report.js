@@ -30,15 +30,15 @@ jQuery.UIBlockSupplierReport = jQuery.UIBlockWithList.extend({
                 "sAjaxSource": this.get_data_source(),
                 "aoColumns": [
                     { "sWidth": "5%"},
-                    { "sWidth": "15%"},
-                    { "sWidth": "15%"},
+                    { "sWidth": "17%","bSortable" : true, "sClass": "left_text", "bSearchable" : true},
+                    { "sWidth": "15%", "sClass": "left_text"},
                     { "sWidth": "10%", "bSortable" : false, "bSearchable" : false},
                     { "sWidth": "10%", "bSortable" : false, "bSearchable" : false},
                     { "sWidth": "10%", "bSortable" : false, "bSearchable" : false},
-                    { "sWidth": "5%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
-                    { "sWidth": "5%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
+                    { "sWidth": "4%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
+                    { "sWidth": "4%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
                     { "sWidth": "10%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
-                    { "sWidth": "15%","bSearchable" : false}
+                    { "sWidth": "15%", "sClass": "left_text"}
                 ],
                 "oLanguage": {
                     "sLengthMenu": gettext("Display _MENU_ records per page"),

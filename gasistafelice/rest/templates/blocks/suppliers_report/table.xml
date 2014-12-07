@@ -2,15 +2,28 @@
 {% load i18n %}
 
 {% block headers %}
-    <th>{% trans "Id" %}</th>
-    <th>{% trans "Supplier" %}</th>
-    <th>{% trans "Frontman" %}</th>
+
+<header class="legenda">
+<h2>Legenda:</h2>
+<ul>
+<li><strong>A = </strong> Totale dei Prodotti</li>
+<li><strong>B = </strong> Totale dei patti stipulati nel Des </li>
+<li><strong>C = </strong> Totale flusso economico solidale dei pagamenti ricevuti </li>
+</ul>
+
+<hr>
+</header>
+
+
+    <th title='{% trans "Id" %}'>{% trans "Id" %}</th>
+    <th title='{% trans "Supplier" %}'>{% trans "Supplier" %}</th>
+    <th title='{% trans "Frontman" %}'>{% trans "Frontman" %}</th>
     <th title='{% trans "Address" %}'>{% trans "City" %}</th>
     <th title='{% trans "Email" %}'>{% trans "Email" %}</th>
     <th title='{% trans "Phone" %}'>{% trans "Phone" %}</th>
-    <th title='{% trans "TOT products" %}'>{% trans "Total products" %}</th>
-    <th title='{% trans "TOT pacts" %}'>{% trans "Total Pacts" %}</th>
-    <th title='{% trans "TOT account" %}'>&#8364;</th>
+    <th title='{% trans "TOT products" %}'>A<!--WAS{% trans "TOT products" %}--></th>
+    <th title='{% trans "TOT pacts" %}'>B<!--WAS{% trans "TOT pacts" %}--></th>
+    <th title='{% trans "TOT account" %}'>C<!--WAS&#8364;--></th>
     <th title='{% trans "List of certifications" %}'>{% trans "Certification" %}</th>
 {% endblock %}
 

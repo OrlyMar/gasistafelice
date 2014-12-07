@@ -2135,7 +2135,7 @@
      
      
          <!-- ================================================================================================= -->
-         <!-- ********************************* HEADER CONTENT ************************************************ -->
+         <!-- ********************************* Start of HEADER CONTENT *************************************** -->
          <!-- ================================================================================================= -->
 
 
@@ -2275,8 +2275,8 @@
                 <div class="block" id="history">
                     <div class="block_header">
                         <div class="right toolbar">
-                            <span class="toggle_clear"><img class="header_button" src="/Ciao" title="{% trans 'Refresh history' %}" onclick='return clear_history()'/></span> <!-- Aggiorna cronologia -->
-                            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
+                            <span class="toggle_clear"><img class="header_button" src="/Ciao" alt= "Aggiorna cronologia" title="{% trans 'Refresh history' %}" onclick='return clear_history()'/></span> <!-- Aggiorna cronologia -->
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" alt= "Riduci blocco" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
                         </div>
                         <h1 class="block-title" >{% trans "History" %}</h1> <!-- Cronologia -->
                     </div>
@@ -2298,19 +2298,19 @@
                     <div class="block_header">
                         <div class="right toolbar">
                             <span class="toggle_show">
-                            <img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/> <!-- Riduci blocco -->
+                            <img class="header_button" src="/Ciao" alt= "Riduci blocco"title="{% trans 'Minimize block' %}"/> <!-- Riduci blocco -->
                             </span>
                         </div>
                         <h1 class="block-title"> {% trans "User actions" %} </h1>  <!-- Azioni Utente -->
                     </div>
 
-                    <div class="block_body" style="width:200px; height:100px; overflow:hidden; ">
+                    <div class="block_body">
                         <ul>
-                            <li  style="padding:2px">
+                            <li>
                                 <button id="add-block-button" title="{% trans 'Add new block' %}"> <!-- Aggiungi Blocco -->
                                 <img src="{{ MEDIA_URL }}nui/img/add.png"> {% trans "Add new block" %} </button> <!-- Nuovo blocco dati  -->
                             </li>
-                            <li  style="padding:2px">
+                            <li>
                                 <button id="remove-all-block-button" title="{% trans 'Remove all blocks' %}"> <!-- Svuota pagina -->
                                 <img src="{{ MEDIA_URL }}nui/img/remove.png"> {% trans "Remove all blocks" %} </button> <!-- Togli tutti i blocchi -->
                             </li>
@@ -2326,11 +2326,11 @@
                     <div class="block_header ">
                         <div class="right toolbar">
                             <img class="header_button toggle_refresh hide_on_toggle" src="/Ciao" onclick="return reload_usercontainer_tree()"/>
-                            <span class="toggle_show"><img class="header_button" src="/Ciao" alt ="DA Immettere" title="Riduci blocco"/></span>
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" alt= "Riduci blocco" title="Riduci blocco"/></span>
                         </div>
                         <h1 class="block-title">{% trans "User container" %} </h1> <!-- Contenitore utente-->
                     </div>
-                    <div class="block_body" id="usercontiner_logical_tree" is_open="1">
+                    <div class="block_body" id="usercontiner_logical_tree"><!--in div WAS is_open="1"-->
                         <div id="usertree"></div>
                     </div>
                     <!-- Fine block_body -->
@@ -2361,12 +2361,12 @@
                 <div class="block" id="search">
                     <div class="block_header ui-corner-top">
                         <div class="right toolbar">
-                            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/></span>
+               <span class="toggle_show"><img class="header_button" src="/Ciao" alt= "Riduci blocco" title="{% trans 'Minimize block' %}"/></span>
                         </div>
                         <h1 class="block-title">{% trans "Search" %}</h1> <!-- Ricerca --> {# title should be "Search in resource(DES)" #}
                     </div>
 
-                    <div class="block_body" id="quick_search" is_open="1">
+                    <div class="block_body" id="quick_search"><!--in div WAS is_open="1"-->
 
                         <div id="searchbox">
                             <div id="search_form" style="text-align :center;">
@@ -2430,7 +2430,7 @@
             <div class="block_header ui-corner-top">
                   <div class="right toolbar">
                    <img class="header_button toggle_refresh hide_on_toggle" alt="ciao" src="/Ciao" onclick="return refresh_user_notifications()"/>
-                   <span class="toggle_show"><img class="header_button" src="/Ciao" alt="ciao" title="{% trans 'Minimize block' %}"/></span>
+                   <span class="toggle_show"><img class="header_button" src="/Ciao" alt= "Riduci blocco" title="{% trans 'Minimize block' %}"/></span>
                   </div>
                         <h1 class="block-title">{% trans "Notifications" %}</h1> <!-- Notifiche -->
              </div>
@@ -2449,9 +2449,8 @@
 
                         <div class="right toolbar">
                             <img class="header_button toggle_refresh hide_on_toggle"
-                                 src="/Ciao"
-                                 onclick='return refresh_user_notes()'/>
-                            <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
+                                 src="/Ciao" /> <!--WAS inside onclick='return refresh_user_notes()'-->
+                            <span class="toggle_show"><img class="header_button" src="/Ciao" alt= "Riduci blocco" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
                         </div>
 
                         <h1 class="block-title" >{% trans "Notes" %} (<span id="notes-count">0</span>)</h1> <!-- Note -->
@@ -2478,8 +2477,8 @@
             </div>
             -->
             
-            <ul id="body_content">
-                <div id="user_notifications" style="display:none;"> </div>
+            <ul id="body_content" class="user_notifications">
+                <!--WAS <div id="user_notifications"> </div>-->
             </ul>
      
             <div id="body-bottom">&nbsp;</div>
@@ -2559,20 +2558,19 @@
        <li> <hr/> </li>
 {% endcomment %}
         <li class="toggle_fullscreen"><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
-         alt="Da Immettere"><span class="item">{% trans "Set to full screen" %}</span></li>
-        <li class="toggle_show"><img class="header_button" src="/Ciao"  title="{% trans 'Minimize block' %}" 
-         alt="Da Immettere" ><span class="item">{% trans "Minimize block" %}</span></li>
+         alt="Allarga blocco"><span class="item">{% trans "Set to full screen" %}</span></li>
+        <li class="toggle_show"><img class="header_button" src="/Ciao"  alt= "Riduci blocco" title="{% trans 'Minimize block' %}"><span class="item">{% trans "Minimize block" %}</span></li>
     </ul>
                     
         </div>
                 
         <div name= "right_toolbar"  class="right toolbar">
             <span class="toggle_fullscreen hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
-             alt="Da Immettere" ></span>
+             alt="Allarga blocco" ></span>
             <span class="toggle_refresh hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Refresh block now'  %}" 
-             alt="Da Immettere" ></span>
+             alt="Aggiorna blocco" ></span>
             <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}" 
-             alt="Da Immettere" ></span>
+             alt="Riduci blocco" ></span>
                 </div>
 
                 <div name='title' class="block-title">

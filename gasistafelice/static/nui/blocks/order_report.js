@@ -22,13 +22,13 @@ jQuery.UIBlockOrderReport = jQuery.UIBlockWithList.extend({
                 "aaSorting": [[1,"asc"]],
                 "aoColumns": [
                     { "sWidth": "5%", "bSearchable":true},
-                    { "sWidth": "30%", "bSearchable":true},
+                    { "sWidth": "50%", "bSearchable":true, "sClass": "left_text"},
                     { "sWidth": "10%", "sType": "currency", "sClass": "taright", "bSearchable" : false},
                     { "sWidth": "5%", "bSortable" : false, "bSearchable" : false},
-                    { "sWidth": "10%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
+                    { "sWidth": "5%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
                     { "sWidth": "5%", "bSortable" : false, "bSearchable" : false},
-                    { "sWidth": "15%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
-                    { "sWidth": "15%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
+                    { "sWidth": "5%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
+                    { "sWidth": "10%", "bSortable" : false, "sClass": "taright", "bSearchable" : false},
                     { "sWidth": "5%", "bSearchable" : false}
                 ],
                 "oLanguage": {

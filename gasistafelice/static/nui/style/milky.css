@@ -18,13 +18,25 @@
 .pact.inline                                 { background : transparent url('/static/nui/img/milky/pact16x16.png') no-repeat scroll left; }
 
 .supplier                                        { list-style-image : url('/static/nui/img/milky/supplier16x16.png'); }
-.supplier.inline                                 { background : transparent url('/static/nui/img/milky/supplier16x16.png') no-repeat scroll left; }
+.supplier.inline {
+    background : transparent url('/static/nui/img/milky/supplier16x16.png') no-repeat scroll left;
+   
+ }
+/* Add Orly*/
+.left_text {
+text-align:left !important;
+}
 
 .product                                        { list-style-image : url('/static/nui/img/milky/product16x16.png'); }
 .product.inline                                 { background : transparent url('/static/nui/img/milky/product16x16.png') no-repeat scroll left; }
 
 .stock                                        { list-style-image : url('/static/nui/img/milky/product16x16.png'); }
-.stock.inline                                 { background : transparent url('/static/nui/img/milky/product16x16.png') no-repeat scroll left; }
+.stock.inline { 
+    background : transparent url('/static/nui/img/milky/product16x16.png') no-repeat scroll left;
+    /*float:left;*/
+ }
+
+
 
 .delivery                                        { list-style-image : url('/static/nui/img/milky/delivery16x16.png'); }
 .delivery.inline                                 { background : transparent url('/static/nui/img/milky/delivery16x16.png') no-repeat scroll left; }

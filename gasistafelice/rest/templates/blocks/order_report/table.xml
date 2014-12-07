@@ -8,6 +8,7 @@
 <li><strong>A = </strong> Eventuali cambiamenti di prezzo in corso d' ordine</li>
 <li><strong>B = </strong> Totale dei gasisti (famiglie) che hanno ordinato il prodotto </li>
 <li><strong>C = </strong> Totale degli eventuali ordini non confermati </li>
+<li><strong>D = </strong> Disponibilità dei prodotti </li>
 </ul>
 <hr>
 </header>
@@ -20,7 +21,7 @@
     <th title='{% trans "Num of un confirmed gasmember orders" %}'>C<!--WAS{% trans "n° UnC" %}--></th>
     <th title='{% trans "Ordered amount" %}'>{% trans "Amount" %}</th>
     <th title='{% trans "Ordered total" %}'>{% trans "Total" %}</th>
-    <th>{% trans "Available" %}</th>
+    <th title='{% trans "Available" %}'>D<!--WAS{% trans "Available" %}--></th>
 {% endblock %}
 
 {% block footer %}
