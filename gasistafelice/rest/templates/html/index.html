@@ -2450,7 +2450,7 @@
 
                         <div class="right toolbar">
                             <img class="header_button toggle_refresh hide_on_toggle"
-                                 src="/Ciao" /> <!--WAS inside onclick='return refresh_user_notes()'-->
+                                 src="/Ciao" alt="ciao"  /> <!--WAS inside onclick='return refresh_user_notes()'-->
                             <span class="toggle_show"><img class="header_button" src="/Ciao" alt= "Riduci blocco" title="{% trans 'Minimize block' %}"/> </span> <!-- Riduci blocco -->
                         </div>
 
@@ -2534,13 +2534,13 @@
     <!-- Templages for UI elements  -->
     <!-- *********************************************************** -->
 
-<div class="templates">
+<section class="templates">
+  <ul>
+   <li class="block ui-corner-all" id="block_template"><!--orly Was inside:  block_urn=""-->
 
-  <li class="block ui-corner-all" id="block_template" block_urn="">
-
-    <div name='block_header' class="block_header ui-corner-top">
+    <div  class="block_header ui-corner-top"><!--orly Was inside: name='block_header'-->
             
-      <div name='left_toolbar' class="left toolbar">
+      <div  class="left toolbar"><!--orly Was inside: name='left_toolbar'-->
                 
         <span class="block_menu_trigger  hide_on_toggle"><img src="{{ MEDIA_URL }}nui/img/menu.png" alt="Da Immettere" ></span>
           <ul class='block_menu_entries'>
@@ -2561,11 +2561,11 @@
         <li class="toggle_fullscreen"><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
          alt="Allarga blocco"><span class="item">{% trans "Set to full screen" %}</span></li>
         <li class="toggle_show"><img class="header_button" src="/Ciao"  alt= "Riduci blocco" title="{% trans 'Minimize block' %}"><span class="item">{% trans "Minimize block" %}</span></li>
-    </ul>
+           </ul>
                     
         </div>
                 
-        <div name= "right_toolbar"  class="right toolbar">
+        <div  class="right toolbar"><!--orly Was inside: name= "right_toolbar" -->
             <span class="toggle_fullscreen hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
              alt="Allarga blocco" ></span>
             <span class="toggle_refresh hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Refresh block now'  %}" 
@@ -2574,7 +2574,7 @@
              alt="Riduci blocco" ></span>
                 </div>
 
-                <div name='title' class="block-title">
+                <div  class="block-title">  <!--orly Was inside: name="title"-->
                     <span>
                     </span>
                     <a class="">
@@ -2583,18 +2583,18 @@
 
             </div>
 
-            <div name='block_control_panel' class="block_control_panel">
+            <div  class="block_control_panel"><!--orly Was inside name='block_control_panel'-->
             </div>
 
-            <div name='block_body' class="block_body">
+            <div class="block_body"><!--orly Was inside name='block_body' -->
             </div>
-        </li>
+  </li></ul>
 
         <div id="blockaddwizard">
             <ul>
                 <li class="blockwizardpage">
                         {% trans "Select the resource type" %} :<br/>
-                    <select multiple="true" id="bwrt" name="resource_type">
+                    <select id="bwrt"><!--orly Was inside:  multiple="true" name="resource_type"-->
 
                         <option value="site/"     > {% trans "Site"      %} </option>
                         <option value="container/"> {% trans "Container" %} </option>
@@ -2607,16 +2607,16 @@
                 <li class="blockwizardpage">
                     {% trans "Select the resource" %}
                         : <br/>
-                    <select multiple="true" id="bwri" name="resource_id"></select>
+                    <select  id="bwri"></select><!--orly Was inside: multiple="true" name="resource_id"-->
                 </li>
                 <li class="blockwizardpage">
                     {% trans "Select the data block type" %}
                         :<br/>
-                    <select multiple="true" id="bwbn" name="blockname"></select>
+                    <select  id="bwbn"></select><!--orly Was inside: multiple="true"  name="blockname"-->
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <div id="log"></div>
 </section> <!-- end of #container -->

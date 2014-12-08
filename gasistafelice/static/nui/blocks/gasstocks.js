@@ -21,7 +21,7 @@ jQuery.UIBlockGASStockList = jQuery.UIBlockWithList.extend({
                 "sAjaxSource": this.get_data_source(),
                 "aoColumns": [
                     {"bSearchable":true,"bSortable":true,"sWidth":"5%","bVisible": true},
-                    {"bSearchable":true,"bSortable":true,"sWidth":"30%","bVisible": true},
+                    {"bSearchable":true,"bSortable":true,"sWidth":"30%","bVisible": true,"sClass": "left_text"},
                     {"bSearchable":true,"bSortable":true,"sWidth":"10%","bVisible": true,"sClass": "left_text"},
                     {"bSearchable":true,"bSortable":true,"sWidth":"15%", "sType": "currency", "sClass": "taright" },
                     {"bSearchable":false,"bSortable":true,"sWidth":"10%",},
