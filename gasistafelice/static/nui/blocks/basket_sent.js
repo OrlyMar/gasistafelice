@@ -17,9 +17,9 @@ jQuery.UIBlockBasketSentList = jQuery.UIBlockWithList.extend({
                 "sAjaxSource": this.get_data_source(),
                 "aaSorting": [[2,"asc"]],
                 "aoColumns": [
-                    {"bSearchable":true,"bSortable":true, "sWidth": "30%"},
-                    {"bSearchable":true,"bSortable":true, "sWidth": "15%"},
-                    {"bSearchable":true,"bSortable":true, "sWidth": "25%"},
+                    {"bSearchable":true,"bSortable":true, "sWidth": "30%","sClass": "left_text"},
+                    {"bSearchable":true,"bSortable":true, "sWidth": "15%","sClass": "left_text"},
+                    {"bSearchable":true,"bSortable":true, "sWidth": "25%","sClass": "left_text"},
                     {"bSearchable":true, "bSortable":true, "sType": "currency", "sClass": "taright", "sWidth": "10%"},
                     {"bSearchable":true, "bSortable":true, "sClass": "taright", "sWidth": "10%"},
                     {"bSearchable":false, "sType": "currency","bSortable":false, "sClass": "taright", "sWidth": "10%"},

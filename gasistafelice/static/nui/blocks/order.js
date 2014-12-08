@@ -32,7 +32,7 @@ jQuery.UIBlockOrder = jQuery.UIBlockWithList.extend({
                             return res.render();
                           }
                     },
-                    {"bSortable":true,"bSearchable":true, "sWidth": "25%",
+                    {"bSortable":true,"bSearchable":true, "sWidth": "25%","sClass": "left_text",
                       "fnRender": function ( oObj ) {
                             var url = $(oObj.aData[iQta]).attr('p_url');
                             var _name = oObj.aData[ oObj.iDataColumn ];

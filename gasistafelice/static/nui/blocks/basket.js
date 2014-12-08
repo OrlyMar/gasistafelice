@@ -21,8 +21,8 @@ jQuery.UIBlockBasketList = jQuery.UIBlockWithList.extend({
                 "aaSorting": [[2,"asc"]],
                 "aoColumns": [
                     {"bSearchable":true,"bSortable":true, "sWidth": "3%"},
-                    {"bSearchable":true,"bSortable":true, "sWidth": "9%"},
-                    {"bSearchable":false,"bSortable":true, "sWidth": "18%",
+                    {"bSearchable":true,"bSortable":true, "sWidth": "9%","sClass": "left_text"},
+                    {"bSearchable":false,"bSortable":true, "sWidth": "18%","sClass": "left_text",
                       "fnRender": function ( oObj ) {
                                     var url = $(oObj.aData[iQta]).attr('s_url');
                                     var _name = oObj.aData[ oObj.iDataColumn ];
@@ -30,7 +30,7 @@ jQuery.UIBlockBasketList = jQuery.UIBlockWithList.extend({
                                     return res.render();
                                   },
                     },
-                    {"bSearchable":false,"bSortable":true, "sWidth": "29%",
+                    {"bSearchable":false,"bSortable":true, "sWidth": "29%","sClass": "left_text",
                       "fnRender": function ( oObj ) {
                                     var url = $(oObj.aData[iQta]).attr('p_url');
                                     var _name = oObj.aData[ oObj.iDataColumn ];

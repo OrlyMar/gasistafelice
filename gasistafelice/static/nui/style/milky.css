@@ -22,10 +22,7 @@
     background : transparent url('/static/nui/img/milky/supplier16x16.png') no-repeat scroll left;
    
  }
-/* Add Orly*/
-.left_text {
-text-align:left !important;
-}
+
 
 .product                                        { list-style-image : url('/static/nui/img/milky/product16x16.png'); }
 .product.inline                                 { background : transparent url('/static/nui/img/milky/product16x16.png') no-repeat scroll left; }

@@ -5,8 +5,8 @@
 <html lang="it" xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <!--<meta http-equiv="Content-Language" content="it" /> -->
-    <!--<meta http-equiv="X-UA-Compatible" content="chrome=1" />-->
+    <!--orly WAS:<meta http-equiv="Content-Language" content="it" /> -->
+    <!--orly WAS:<meta http-equiv="X-UA-Compatible" content="chrome=1" />-->
     <meta name="robots" content="NONE,NOARCHIVE" />
 
     <meta name="apple-mobile-web-app-capable"          content="yes" />
@@ -34,7 +34,7 @@
     <link rel="alternate stylesheet" type="text/css" href="{{ MEDIA_URL }}nui/style/nuvola.css" title="nuvola" />
     <link rel="alternate stylesheet" type="text/css" href="{{ MEDIA_URL }}nui/style/tango.css" title="tango" />
 
-    <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}nui/style/report.css" />
+    <!--orly WAS:<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}nui/style/report.css" />-->
     <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}nui/style/rest.css" />
     
     <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}nui/style/demo_table.css" />
@@ -2158,58 +2158,58 @@
    <nav id ="barre_menu"> 
    
     <section id="user_placeholder" > <!-- Inizio sezione barra Menu Risorse {Ordinare,Gas,Patti ecc...} -->
-              <span id="user_data_placeholder">                   
+  <!--orly WAS:<span id="user_data_placeholder">-->                   
                      
-                <span  id="user_data">
-                        <span id="user_urn_gasmember" class="menu_section">
+        <!--orly WAS:<span  id="user_data"> poi sostituito span con menu-->
+                        <menu id="user_urn_gasmember" class="menu_section">
                             <strong>Ordinare</strong>                
                             <ul class="submenu">
                               <li></li>
                              </ul>
-                         </span>
-                 </span>
-                 <span id="user_urn">
-                     <span id="user_urn_gas" class="menu_section" >
+                         </menu>
+       <!--orly WAS:</span>-->
+       <!--orly WAS:<span id="user_urn"> poi sostituito span con menu-->
+                     <menu id="user_urn_gas" class="menu_section" >
                                 <strong>GAS</strong>
                                 <ul class="submenu"> 
                                   <li></li>
                                 </ul>
-                      </span>
+                      </menu>
                         
-                      <span id="user_urn_pact" class="menu_section" >
+                      <menu id="user_urn_pact" class="menu_section" >
                                 <strong>Patti</strong>
                                 <ul class="submenu"> 
                                   <li></li>
                                 </ul>
-                      </span>
+                      </menu>
                          
-                      <span id="user_urn_supplier" class="menu_section" >
+                      <menu id="user_urn_supplier" class="menu_section" >
                                 <strong>Fornitori</strong>
                                 <ul class="submenu"> 
                                   <li></li>
                                 </ul>
-                       </span>
-                    </span>
+                       </menu>
+        <!--orly WAS:</span>-->
                     
-                    <span id="history_menu" class="menu_section">
+                    <menu id="history_menu" class="menu_section">
                           <strong>Cronologia</strong>
                             <ul id="history_elements" class="submenu">
                                <li></li>
                             </ul>
-                    </span>
+                    </menu>
                     {% comment %}
-                    <span id="settings_menu" class="menu_section">
+                    <menu id="settings_menu" class="menu_section">
                         <strong>Impostazioni</strong>
                           <ul class="submenu">
                             <li></li>
                           </ul>
-                    </span>
+                    </menu>
                     {% endcomment %}
                     
-                    <span id="home_page" class="menu_section"><a  href="{{ user.person.get_absolute_url_page }}" title="Vai alla Scheda Utente" >
-                      <strong>Utente</strong><!--{% trans "Home page" %}--></a></span>
+                    <menu id="home_page" class="menu_section"><a  href="{{ user.person.get_absolute_url_page }}" title="Vai alla Scheda Utente" >
+                      <strong>Utente</strong><!--{% trans "Home page" %}--></a></menu>
 
-                    <span id="help_menu" class="menu_section">
+                    <menu id="help_menu" class="menu_section">
                         <strong>Aiuto!</strong>
                         <ul id="help_elements" class="submenu">
                             <li></li>
@@ -2217,11 +2217,12 @@
                             <li><a href="http://befair.it/supporto/" target="_blank">Chiedi nel FORUM</a></li>
                             <li><a href="http://www.youtube.com/channel/UC8tP2Zl7Zjwx4G3fZGtzByw" target="_blank">Guarda i VIDEO!</a></li>
                         </ul>
-                    </span>
+                    </menu>
 
 
-                    <span id="user_logout"><a  href="{{ LOGOUT_URL }}"><img src="/static/img/esci00.png" alt="Logout"
-                       title="Bottone di Uscita (Logout)"  /></a></span><!--{% trans "Logout" %}--> </span>
+                    <menu id="user_logout"><a  href="{{ LOGOUT_URL }}"><img src="/static/img/esci00.png" alt="Logout"
+                       title="Bottone di Uscita (Logout)"  /></a></menu><!--{% trans "Logout" %}--> 
+        <!--orly WAS:</span>-->
                 
     </section><!-- Fine sezione barra menu section -->
 

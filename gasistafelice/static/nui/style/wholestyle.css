@@ -301,11 +301,11 @@ background-color: #FFFFE0;
 }
 
 #user_logout  {
-    vertical-align: top;
-    margin-right:1px;
-    width:60px;
+    vertical-align: middle !important ;
+    margin-top:1px;    
     background: transparent;
-
+    float:right;
+    padding:0
 }
 
 
@@ -429,6 +429,19 @@ margin:2px;
 .right { float: right; }
 
 .left { float: left; }
+
+/* Add Orly*/
+.left_text {
+text-align:left !important;
+}
+
+.right_text {
+text-align:right !important;
+}
+
+.center_text {
+text-align:center !important;
+}
 
 
 /*|==================================================================|*/
@@ -950,3 +963,259 @@ border:0px;
     overflow-y:hidden;
 }
 
+
+/*|==================================================================|*/
+/*|********************** EX REPORT CSS *****************************|*/
+/*|==================================================================|*/
+
+
+		.resource_report_box {
+			padding: 10px;
+		}
+
+		.report_form_title {
+			font-size: 16px;
+		}
+
+		.report_list_table {
+			width: 100%;
+			border: 0px solid black;
+			border-spacing: 2px;
+			border-collapse: collapse;
+			table-layout:fixed;
+		}
+
+		.report_list_table tr {
+			border-bottom : 2px solid black;
+	
+		}
+
+		.report_list_table th {
+			border-bottom : 1px solid gray;
+			background-color : #d7ecc7;
+			margin: 10px;
+			text-align : center;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		/*
+		 * FORMS
+		 */
+
+
+
+		.new_report_box {
+			padding: 10px;
+			border: 1px solid #a0a0a0;
+		}
+	
+		.report_params_table {
+			border: 0px solid black;
+			border-spacing: 2px;
+			border-collapse: collapse;
+		}
+	
+		.report_params_table th {
+			border-bottom : 1px solid gray;
+			background-color : #d7ecc7;
+			margin: 10px;
+			text-align : center;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+
+
+
+
+
+
+
+		.img_cell {
+			width: 300px;
+		}
+
+
+
+		.report_errors * {
+			color: red;
+		}
+
+		/*
+		 *
+		 */
+		.report_table {
+			width: 30%;
+			font-size: 10px;
+		}
+		.report_table_header {
+			background-color : #d7ecc7;
+			font-weight: bold;
+			font-size: 10px;
+		}
+
+		.report_table_row_label {
+			font-weight: bold;	
+		}
+
+		.report_table_row_val {
+			text-align: right;
+		}
+
+		/*
+		* Grafici a torta
+		*/
+		.pie_chart {
+			vertical-align:top; 
+			display:inline-block; 
+			text-align:center;
+		}
+
+		.pie_chart_graph {
+		}
+
+		.pie_chart_info {
+		}
+
+		.pie_chart_legend {
+			font-size: 10px;
+			width: 50%;
+			text-align: center;
+			padding: 2px;
+		}
+
+		.pie_chart_legend_header {
+			background-color : #d7ecc7;
+			font-weight: bold;
+			font-size: 10px;
+		}
+
+		.pie_chart_legend_entry_label {
+			font-weight: bold;	
+		}
+
+		.pie_chart_legend_entry_value {
+		}
+
+		/*
+		* Grafici a barre
+		*/
+		.bar_chart {
+			vertical-align:middle; 
+			display:inline-block; 
+			text-align:center;
+		}
+
+		.bar_chart_graph {
+		}
+
+		.bar_chart_info {
+		}
+
+		.bar_chart_legend {
+
+			width: 50%;
+			text-align: center;
+			padding: 2px;
+			letter-spacing	: 1px;
+		}
+
+		.bar_chart_legend_header {
+			background-color : #d7ecc7;
+			font-weight: bold;
+			font-size: 10px;
+			width: 50px;
+		}
+
+		.bar_chart_legend_row {
+			font-size: 10px;
+			width: 50px;
+		}
+
+		/*
+		* Grafici a barre
+		*/
+		.line_chart {
+			border: 1px solid #ff0000; 
+			display:inline;
+                        text-align:center;
+		}
+
+		.line_chart_graph {
+			border: 1px solid #0000ff;
+		}
+
+		.line_chart_info {
+			border: 1px solid #ff00ff;
+		}
+
+		.line_chart_title {
+			border: 1px solid #00ffff;
+		}
+
+.report { list-style-image : url('/static/theme/img/resources/report16x16.png'); white-space: normal; }
+.report.inline { background : transparent url('/static/theme/img/resources/report16x16.png') no-repeat scroll left; }
+
+.report-C { list-style-image : url('/static/theme/img/resources/report16x16.png'); background-color: lightgrey; white-space: normal;}
+.report-C.inline { background : transparent url('/static/theme/img/resources/report16x16.png') no-repeat scroll left; background-color: grey;  }
+
+.periodicreport { list-style-image : url('/static/theme/img/resources/periodicreport16x16.png'); white-space: normal; }
+.periodicreport.inline { background : transparent url('/static/theme/img/resources/periodicreport16x16.png') no-repeat scroll left; }
+
+/*Reports
+.........*/
+.totfield {
+	font-size:1.5em;
+	font-weight:bold;
+	color:#136E6F;
+	text-align:right;
+	vertical-align:middle;
+	}
+
+.totvalue {
+    font-size:1.6em;
+    font-weight:bold;
+    color:#005687;
+    background-color:#aafaff;
+    text-align:center;
+    font-family: Monospace, Arial;
+    margin:5px 3px;
+    vertical-align:middle;
+  }
+
+.empty {
+	text-align:center;
+	font-size:1.4em;
+	color:red;
+	font-family: Monospace, Arial;
+	}
+	    
+.taright {
+	text-align:center;
+	vertical-align:middle;
+	}
+	
+.taright th {
+	margin-right:17px;
+   padding-right:17px;
+   }
+   
+.tacenter {
+	text-align:center;
+	vertical-align:middle;
+	}
+	
+.alert {
+	color:red!important;
+   background-color:#EAF5E2!important;
+   }
+   
+.dataTable tr td {
+	vertical-align:middle;
+        text-align:center;
+	}
+	
+th.taright {
+	text-align:center;
+	}
