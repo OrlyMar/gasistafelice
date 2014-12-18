@@ -110,8 +110,8 @@ class PlaceAdmin(admin.ModelAdmin):
 class ContactAdmin(admin.ModelAdmin):
 
     search_fields = ('value',)
-    list_display = ('pk', '__unicode__', 'flavour', 'value')
-    list_editable = ('flavour', 'value')
+    list_display = ('pk', '__unicode__', 'flavour', 'value',)
+    list_editable = ('flavour', 'value',)
     list_filter = ('flavour',)
 
 class GASAdmin(admin.ModelAdmin):
@@ -332,9 +332,10 @@ class GASSupplierOrderAdmin(admin.ModelAdmin):
     fieldsets = ((None,
             { 'fields' : (
                 'pact',
-                ('datetime_start', 'datetime_end'),
+                ('datetime_start', 'datetime_end' ,),
                 'delivery',
                 'withdrawal',
+                
               )
             }),
     )
@@ -357,7 +358,11 @@ class GASSupplierOrderAdmin(admin.ModelAdmin):
     def queryset(self, request):
         return super(GASSupplierOrderAdmin, self).queryset(request)
 
-    #inlines = [GASSupplierOrderProductInline, ]
+   #inlines = [GASSupplierOrderProductInline, ]
+
+    
+   #search_fields = ( 'delivery',)
+    list_filter = ('datetime_start', 'datetime_end', )
 
 class GASSupplierOrderProductAdmin(admin.ModelAdmin):
     pass
@@ -446,7 +451,7 @@ class LedgerEntryAdmin(admin.ModelAdmin):
 class SupplierProductCategoryAdmin(admin.ModelAdmin):
     list_display = ('__unicode__', 'supplier', 'name', 'sorting')
     list_editable = ('supplier', 'name', 'sorting')
-    list_filter = ('supplier',)
+    #list_filter = ('supplier',)
 
 class RegistrationProfileAdmin(admin.ModelAdmin):
 
