@@ -284,7 +284,7 @@ RESOURCE_PAGE_BLOCKS = {
     ,{
         'name' : 'transazioni',
         'descr' : 'Transazioni',
-        'blocks' : ['transactions']      # Introdotta nuova scheda "Transazioni" per allegerire quella Conto
+        'blocks' : ['site_transactions']      # Introdotta nuova scheda "Transazioni" per allegerire quella Conto del Des
     },{
         'name' : 'prodotti',
         'descr' : 'Prodotti',
@@ -313,7 +313,7 @@ RESOURCE_PAGE_BLOCKS = {
     },{
         'name' : 'ricariche',
         'descr' : 'Ricariche',
-        'blocks' : ['recharge', 'fee'] #Introdotta nuova scheda "Ricariche" per alleggerire quella Conto
+        'blocks' : ['recharge', 'fee'] #Introdotta nuova scheda "Ricariche" per alleggerire quella Conto del Gas
     },{
         'name' : 'archive',
         'descr' : 'Archivio',
