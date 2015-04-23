@@ -4,7 +4,7 @@ jQuery.UIBlockSupplierReport = jQuery.UIBlockWithList.extend({
     init: function() {
         this._super("suppliers_report", "table");
     },
-        //this.submit_name = "Togli prodotti dall'ordine (elimina ordine gasista)";
+        //this.submit_name = "Togli prodotti da gli ordini (elimina prodotti deselezionati da gli ordini dei gasisti)";
         //this.active_view = "edit_multiple";
         //this.default_view = this.active_view;
 

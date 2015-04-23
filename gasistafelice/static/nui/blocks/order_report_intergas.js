@@ -3,7 +3,7 @@ jQuery.UIBlockOrderInterGAS = jQuery.UIBlockWithList.extend({
 
     init: function() {
         this._super("order_report_intergas", "table");
-        this.submit_name = "Togli prodotti in tutti GAS";
+        this.submit_name = "Togli prodotti deselezionati da gli ordini di tutti i GAS";
     },
         //this.active_view = "edit_multiple";
         //this.default_view = this.active_view;
