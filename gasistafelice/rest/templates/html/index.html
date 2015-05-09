@@ -1625,10 +1625,11 @@
             
             set_separator_icon();
         }
+
         
         function show_resource_panel() 
         {            
-            $('#resource_panel').toggle();
+           $('#resource_panel').toggle();
             prepare_resource_panel();
         }
         
@@ -2139,15 +2140,8 @@
          <!-- ================================================================================================= -->
 
 
- <header id="header-content">
+ <header id="header-content" class="fissa">
   
-       <div class="logo">
-            <span > <img src="/static/img/logo_labs.png" alt="Logo" title="logo"  /></span>
-            <span class ="logo_testuale"> {% trans 'Welcome,' %} in Gasista Felice</span> ;-)
-            <span id="user_name" class="user"></span>
-            <span id="app_clock" class="logo">  caricamento in corso...
-            </span>
-       </div> 
 
                               
 
@@ -2227,7 +2221,7 @@
     </section><!-- Fine sezione barra menu section -->
 
                    <!-- Inizio barra icone validatori html5 e css3 -->
-    <aside id= "validator_icons" class ="barre_menu">
+    <!--<aside id= "validator_icons" class ="barre_menu">
 
                 <figure><a href="http://validator.w3.org/check?uri=referer"><img 
                    src="/static/img/html5.jpeg" alt="Valid XHTML "  /></a></figure>
@@ -2236,7 +2230,16 @@
                    src="/static/img/vcss-blue.gif" alt="CSS Valido!"  /></a></figure>
                 
 
-     </aside>
+     </aside> -->
+
+       <div class="logo">
+           <!--Orly Was Image Logo <span > <img src="/static/img/logo_labs.png" alt="Logo" title="logo"  /></span> -->
+            <span class ="logo_testuale"> {% trans 'Welcome,' %} in Gasista Felice</span> ;-)
+            <span id="user_name" class="user"></span>
+            <span id="app_clock" class="logo">  caricamento in corso...
+            </span>
+       </div> 
+
 
   </nav> <!-- Fine sezione barre menu section ed icone validatori -->
 

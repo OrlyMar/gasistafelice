@@ -26,9 +26,18 @@
 	      background: #FFF; url('/static/logo_cliente.jpg') right top no-repeat;  */
 }
 
+
+.fissa {
+  position: fixed;
+  top: 0px;
+  z-index: 1100;
+}
+}
+
+
 #right_column_wrapper {
         max-width:25%;
-        float:right;
+        float:left;
 	font-size: 90%;
 }
 
@@ -64,7 +73,7 @@
 #header-content {
 	width:96%;
 	padding : 15px 15px 15px 15px;
-	margin-top : 8px;
+	margin-top : 0px !important;
 	
 	margin-left : 8px;
 
@@ -456,6 +465,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,p,blockquote {
 }
 
 body {
+        margin-top: 270px;
 	font-family: verdana, arial, helvetica;
 	font-size : 16px;
 	
@@ -699,11 +709,13 @@ ul.errorlist { max-width : 400px; }
 
 
 .panel {
+        display:none;
 	margin: 0 0.2em;
 	/*margin: 10px;*/
         height : 100%;
-	min-width  : 220px;
-	max-width  : 300px;
+	/*min-width  : auto;*/
+	max-width  : 800px;
+        
 }
 
 
