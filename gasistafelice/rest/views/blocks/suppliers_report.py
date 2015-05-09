@@ -37,7 +37,7 @@ log = logging.getLogger(__name__)
 class Block(BlockSSDataTables):
 
     BLOCK_NAME = "suppliers_report"
-    BLOCK_DESCRIPTION = _("Suppliers")
+    BLOCK_DESCRIPTION = _("Suppliers table details")
     BLOCK_VALID_RESOURCE_TYPES = ["site", "gas"]
 
     COLUMN_INDEX_NAME_MAP = {

@@ -1676,10 +1676,14 @@
         {
             //alert($('#notifications_panel').is(':visible'));
             if ($('#notifications-panel').is(':visible')==true) {
-                $('#right_separator_button').attr('src', '{{ MEDIA_URL }}nui/img/expand_button_right.gif');
-            }
+                $('#right_separator_button').attr('src', '{{ MEDIA_URL }}nui/img/off.png');
+                $('#right_separator_button').attr('title', gettext('Close Resourse Panel') ); //'Chiudi Pannello Risorse'
+                }
+
             else {
-                $('#right_separator_button').attr('src', '{{ MEDIA_URL }}nui/img/expand_button_left.gif');
+                $('#right_separator_button').attr('src', '{{ MEDIA_URL }}nui/img/on.png');
+                $('#right_separator_button').attr('title', gettext('Open Resourse Panel') ); //'Apri Pannello Risorse'
+                
             }                    
         }
 
@@ -2343,7 +2347,7 @@
             </div>
 
             <div id="separator">
-                <img id="separator_gap" src="{{ MEDIA_URL }} nui/img/1x1.gif" alt ="DA Immettere"/> <br/>
+                <img id="separator_gap" src="{{ MEDIA_URL }} nui/img/1x1.gif" alt ="Da Immettere"/> <br/>
                 <img id="separator_button" alt ="DA Immettere" src="/Ciao" />
             </div>
 ###  fero -- before end #resource_panel{% endcomment %}
