@@ -577,31 +577,39 @@ div.box {
 } 
 
 /*---------------------------------------------------------------------------------------------------------
-  Introdotta modifica alla visualizzazione delle liste anche su jquery.rees.js con nuova classe 
-  view_list al posto di "resource row" qui elaborata con il css e l' introduzione del div al posto di table
+  Introdotta modifica alla visualizzazione delle liste anche su  "static/nui/scripts/jquery.rees.js" con nuova classe 
+  new_list al posto di "resource row" e "Container_newlist" sul div al posto di table seguito da
   ul al posto di tr e li al posto di td
 --------------------------------------------------------------------------------------------------------- */
 
-div .view_list  { 
-  width:360px;
-  float:left;
-  margin:1px 1px 10px 10px;
+.Container_newlist{
+  width: auto;
+  margin: 30px ;
+ -webkit-column-width:300px;
+ -webkit-column-gap:25px;auto
+ -webkit-column-rule: 1px solid blue;
+ -moz-column-width:300px;
+ -moz-column-gap:25px;
+ -moz-column-rule: 1px solid blue;
+ column-width: 300px;
+ column-gap: 25px;
+ column-rule: 1px solid blue;
+}
+
+.new_list  { 
   background-color:#eef;
-  font-size:1.4em !important;
+  font-size:1.0em !important;
   font-weight:bold !important; 
   overflow:hidden;
-}
-.view_list { 
- 
-padding: 0 0 0 1px !important; 
-line-height:1.5em !important; 
+  line-height:1.5em !important; 
 }
 
 
-#section_blocks_order .view_list, 
-#section_blocks_orders .view_list,
-#section_blocks_accounting .view_list
+#section_blocks_order .new_list, 
+#section_blocks_orders .new_list,
+#section_blocks_accounting .new_list
  { 
 float:none !important;
 }
+
 

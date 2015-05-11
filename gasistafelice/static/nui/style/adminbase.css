@@ -267,7 +267,7 @@ body.popup div.breadcrumbs {
 ------------------------------------------------------------------------------------------------------ */
 
 ul.messagelist {
-    position: relative; top: 54px; z-index: 1001;
+    position: relative; top: 54px; z-index: 1001;/*non funziona?*/
 }
 ul.messagelist li {
     display: block;
@@ -278,6 +278,8 @@ ul.messagelist li {
 }
 ul.messagelist li.success {
 	background: #C0E1C0 url('../img/icons/icon-yes.png') 15px 50% no-repeat;
+position: relative; top: -54px; z-index: 1001;
+
 }
 ul.messagelist li.error {
 	background: #d00; color:#fff; padding-left:16px;

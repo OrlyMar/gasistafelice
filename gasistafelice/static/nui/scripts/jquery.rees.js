@@ -516,15 +516,14 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
 */
 
         var res = "		\
-        <div> 		\
+        <div class='Container_newlist' > 		\
             @@inforow@@	\
         </div> 		\
         ";
         
         var inforow = " \
             <ul id='@@row_id@@' > 			\
-                <li width='100%'>   			\
-                    <span class='view_list' >@@resource@@</span> \
+                <li class='new_list'>@@resource@@ \
                 </li>		     			\
                 <li>		     			\
                 @@actions@@ \
@@ -532,6 +531,7 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
             </ul>	 			\
             @@inforow@@ \
         ";
+
         var jQel = this.parsed_data;
         
         if (jQel.children('error').length > 0)
