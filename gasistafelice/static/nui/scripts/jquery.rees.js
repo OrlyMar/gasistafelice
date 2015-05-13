@@ -494,8 +494,8 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
 
         /* This method is inspired by blocks specific code of SANET by Laboratori Guglielmo Marconi */
 
+        if ((this.block_name ==  'open_orders') ||(this.block_name=='closed_orders') ||(this.block_name=='insolutes_orders')){
 
-/*WAS:
         var res = "		\
         <table> 		\
             @@inforow@@	\
@@ -513,8 +513,9 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
             </tr>	 			\
             @@inforow@@ \
         ";
-*/
-
+            }
+        
+       else {
         var res = "		\
         <div class='Container_newlist' > 		\
             @@inforow@@	\
@@ -531,7 +532,7 @@ jQuery.UIBlockWithList = jQuery.UIBlock.extend({
             </ul>	 			\
             @@inforow@@ \
         ";
-
+         }
         var jQel = this.parsed_data;
         
         if (jQel.children('error').length > 0)
