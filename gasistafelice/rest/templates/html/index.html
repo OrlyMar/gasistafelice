@@ -1931,15 +1931,18 @@
             
             //$('#resource_panel .toggle_show').attr('src', '{{ MEDIA_URL }}nui/img/button-min.png');
 
+
+   
             //
             // Fullscreen button
             //
+
             $('.toggle_fullscreen').children('img').attr('src', '{{ MEDIA_URL }}nui/img/button-max.png');
             $('.toggle_fullscreen').click( function(e){
                 $('.toolbar').find('ul').hide();
                 var block  = $(this).closest('.block');
                 
-                var ts = block.find('.toggle_fullscreen');
+                var ts = block.find('.toggle_fullscreen'); 
             
                 // Troviamo il blocco che ha triggerato l'azione
                 var header = block.children('.block_header');
@@ -2578,7 +2581,7 @@
        <li> <hr/> </li>
 {% endcomment %}
         <li class="toggle_fullscreen"><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
-         alt="Allarga blocco"><span class="item">{% trans "Set to full screen" %}</span></li>
+         alt="Allarga blocco" style="display:none;"><span class="item">{% trans "Set to full screen" %}</span></li>
         <li class="toggle_show"><img class="header_button" src="/Ciao"  alt= "Riduci blocco" title="{% trans 'Minimize block' %}"><span class="item">{% trans "Minimize block" %}</span></li>
            </ul>
                     
@@ -2586,7 +2589,7 @@
                 
         <div  class="right toolbar"><!--orly Was inside: name= "right_toolbar" -->
             <span class="toggle_fullscreen hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Set to full screen' %}" 
-             alt="Allarga blocco" ></span>
+             alt="Allarga blocco" style="display:none;"></span>
             <span class="toggle_refresh hide_on_toggle" ><img class="header_button" src="/Ciao" title="{% trans 'Refresh block now'  %}" 
              alt="Aggiorna blocco" ></span>
             <span class="toggle_show"><img class="header_button" src="/Ciao" title="{% trans 'Minimize block' %}" 
