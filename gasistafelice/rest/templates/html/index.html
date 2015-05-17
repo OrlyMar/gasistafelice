@@ -1566,7 +1566,6 @@
                         // Start with hidden resource panel
                         //show_resource_panel();
 
-
                         {% if logged_user.is_superuser %}
                         $('#user_name').html('<select id="user_to_simulate">' + 
                             {% for a_user in all_users %}
@@ -2240,6 +2239,19 @@
            <!--Orly Was Image Logo <span > <img src="/static/img/logo_labs.png" alt="Logo" title="logo"  /></span> -->
             <span class ="logo_testuale"> {% trans 'Welcome,' %} in Gasista Felice</span> ;-)
             <span id="user_name" class="user"></span>
+
+<form action="/i18n/setlang/" method="post" style="display:inline">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                            {% get_current_language as LANGUAGE_CODE %}
+                        <select name="language" onchange="this.form.submit();">
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>{{ language.name_local|capfirst }}</option>
+                            {% endfor %}
+                        </select>
+                    </form>&nbsp;
+
             <span id="app_clock" class="logo">  caricamento in corso...
             </span>
        </div> 
