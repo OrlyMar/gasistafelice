@@ -605,6 +605,8 @@ div.box {
 }
 
 
+
+
 #section_blocks_order .new_list, 
 #section_blocks_orders .new_list,
 #section_blocks_accounting .new_list
@@ -612,4 +614,25 @@ div.box {
 float:none !important;
 }
 
+#search_results{
+  width: auto;
+  margin: 30px ;
+ -webkit-column-width:500px;
+ -webkit-column-gap:25px;auto
+ -webkit-column-rule: 1px solid blue;
+ -moz-column-width:500px;
+ -moz-column-gap:25px;
+ -moz-column-rule: 1px solid blue;
+ column-width: 500px;
+ column-gap: 25px;
+ column-rule: 1px solid blue;
+}
+
+#search_results li{ 
+  background-color:#eef;
+  font-size:1.0em !important;
+  font-weight:bold !important; 
+  overflow:hidden;
+  line-height:1.5em !important; 
+}
 
